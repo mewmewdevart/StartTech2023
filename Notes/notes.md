@@ -18,4 +18,5 @@
 
 #### Links:
     - Imagens SVG animadas: https://lottiefiles.com/animation/loot ou https://medialoot.com/preview/frame/animated-svg-preloaders.html
-    - Flexbox: https://flexboxfroggy.com/#pt-br
+    - Flexbox Game: https://flexboxfroggy.com/#pt-br
+    - Flexbox CSS: https://www.alura.com.br/artigos/css-guia-do-flexbox?gclid=CjwKCAjwkLCkBhA9EiwAka9QRmW4a6APF5Et3M08hs5QgSD8S2S3DKysAMvxzlFH9zxzHD_NqDHpGBoCSbMQAvD_BwE#o-que-e-o-_flexbox_
