@@ -1,0 +1,40 @@
+@import url('resetCss.css');
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../rscs/fonts/Roboto/Roboto-Black.ttf') format('ttf');
+    src: url('../rscs/fonts/Roboto/Roboto-BlackItalic.ttf') format('ttf');
+    src: url('../rscs/fonts/Roboto/Roboto-Bold.ttf') format('ttf');
+    src: url('../rscs/fonts/Roboto/Roboto-BoldItalic.ttf') format('ttf');
+    src: url('../rscs/fonts/Roboto/Roboto-Italic.ttf') format('ttf');
+    src: url('../rscs/fonts/Roboto/Roboto-Light.ttf') format('ttf');
+    src: url('../rscs/fonts/Roboto/Roboto-LightItalic.ttf') format('ttf');
+    src: url('../rscs/fonts/Roboto/Roboto-Medium.ttf') format('ttf');
+    src: url('../rscs/fonts/Roboto/Roboto-MediumItalic.ttf') format('ttf');
+    src: url('../rscs/fonts/Roboto/Roboto-Regular.ttf') format('ttf');
+    src: url('../rscs/fonts/Roboto/Roboto-Thin.ttf') format('ttf');
+    src: url('../rscs/fonts/Roboto/Roboto-ThinItalic.ttf') format('ttf');
+  }
+
+:root {
+    --TITLE_COLOR: #5be4d6;
+    --STANDARD_FONTSIZE: 18px;
+    --TITLE_FONTSIZE: 25px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--STANDARD_FONTSIZE);
+}
+
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+title {
+    font-size: var(--TITLE_FONTSIZE);
+    font-weight: bold;
+    text-align: center;
+}
