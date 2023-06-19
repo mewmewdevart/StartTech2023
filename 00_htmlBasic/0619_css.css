@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@700&family=Open+Sans:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    color: #363636;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+h1 {
+    color: #363636;
+    font-size: 36px;
+    font-family: Lato, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h2 {
+    font-family: 'Merriweather', serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+h3 {
+    font-size: 21px;
+    margin-top:15px;
+}
+p {
+    margin-top: 10px;
+}
+a {
+    margin-top: 10px;
+}
+img {
+    width: 100%;
+}
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+#cabecalho {
+    width: 100%;
+    height: 120px;
+    background-color: #569DAA;
+}
+
+#lista-produtos {
+    display: flex;
+    margin: auto;
+}
+
+.produto {
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #363636;
+    text-align: center;
+}
+
+.produto img {
+    width: 250px;
+    height: 250px;
+}
+
+.preco {
+    font-weight: bold;
+    color: green;
+    font-size: 1.5rem;
+}
+
+.botao {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    width: calc(100% - 30px);
+    background-color: #7E33E0;
+    color: white;
+    padding: 15px;
+}
