@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--COLOR_WHITE: rgb(255, 255, 255);
+	--COLOR_GREEN: rgb(103, 230, 89);
+	--COLOR_SOFTBLUE: rgb(91, 228, 214);
+	--COLOR_SOFTPURPLE: rgb(196, 187, 211);
+	--COLOR_MEDIUMPURPLE: #8289F3;
+	--COLOR_DARKPURPLE: rgb(84, 59, 128);
+	--linear: linear-gradient(90deg, #8289F3 0%, #75B7F2 100%);
+
+	--STANDARD_FONTSIZE: 18px;
+	--TITLE_FONTSIZE: 25px;
+}
+
+.navbar {
+	text-align: center;
+	background: linear-gradient(to bottom, #75B7F2 75%, transparent 25%);
+  }
+
+.logo {
+	width: 100px;
+	height: 100px;
+}
+
+
+.titleSections {
+	font-size: 20px;
+}
+#top-container {
+	min-height: 80vh;
+	background-color: white;
+}
+
+#mid-image {
+	min-height: 80vh;
+	padding: 20px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #75B7F2 !important;
+	border: 0px solid;
+}
+
+.card-img-top {
+	height: 250px;
+}
+
+.socials {
+	margin: 0;
+}
+.fa-facebook-f {
+	padding: 25px;
+	background: var(--COLOR_SOFTBLUE);
+	color: var(--COLOR_WHITE);
+}
+
+.fa-instagram {
+	padding: 25px;
+	background: var(--COLOR_SOFTPURPLE);
+	color: var(--COLOR_WHITE);
+}
+
+.fa-whatsapp
+{
+	padding: 25px;
+	background:  var(--COLOR_GREEN);
+	color: var(--COLOR_WHITE);
+}
+
+.footer-bg {
+	background-color: #FFE35C;
+}

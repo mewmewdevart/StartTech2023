@@ -13,16 +13,20 @@ body {
 }
 
 #headerStart {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--purpleSoft);
-    width: 100%;
-    min-height: 100px;
+    padding: 3%;
 }
 
 .titleStart {
     font-size: 26px;
     font-weight: bold;
     color: white;
+}
+
+.image-logo {
+    width: 25%;
+}
+
+.title-page {
+    font-size:16px;
+    font-weight: bold;
 }

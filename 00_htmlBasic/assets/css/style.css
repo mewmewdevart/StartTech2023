@@ -1,0 +1,225 @@
+@import url('resetCss.css');
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap');
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../rscs/fonts/Roboto/Roboto-Black.ttf') format('truetype');
+	src: url('../rscs/fonts/Roboto/Roboto-BlackItalic.ttf') format('truetype');
+	src: url('../rscs/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+	src: url('../rscs/fonts/Roboto/Roboto-BoldItalic.ttf') format('truetype');
+	src: url('../rscs/fonts/Roboto/Roboto-Italic.ttf') format('truetype');
+	src: url('../rscs/fonts/Roboto/Roboto-Light.ttf') format('truetype');
+	src: url('../rscs/fonts/Roboto/Roboto-LightItalic.ttf') format('truetype');
+	src: url('../rscs/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+	src: url('../rscs/fonts/Roboto/Roboto-MediumItalic.ttf') format('truetype');
+	src: url('../rscs/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+	src: url('../rscs/fonts/Roboto/Roboto-Thin.ttf') format('truetype');
+	src: url('../rscs/fonts/Roboto/Roboto-ThinItalic.ttf') format('truetype');
+}
+
+:root {
+	--COLOR_WHITE: rgb(255, 255, 255);
+	--COLOR_GREEN: rgb(103, 230, 89);
+	--COLOR_SOFTBLUE: rgb(91, 228, 214);
+	--COLOR_SOFTPURPLE: rgb(196, 187, 211);
+	--COLOR_MEDIUMPURPLE: #8289F3;
+	--COLOR_DARKPURPLE: rgb(84, 59, 128);
+	--linear: linear-gradient(90deg, #8289F3 0%, #75B7F2 100%);
+
+	--STANDARD_FONTSIZE: 18px;
+	--TITLE_FONTSIZE: 25px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: var(--STANDARD_FONTSIZE);
+	background: rgb(255,255,255);
+}
+
+/* Cupom - Container */
+.cupom {
+	margin: 0;
+}
+
+.letter-cupom {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* Header : Logo */
+.header_container-fluid {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5%;
+	width: 100%;
+	height: 40px;
+	background: var(--linear);
+}
+
+.header-container {
+	position: relative;
+	width: 100px;
+	height: 200px;
+}
+
+.image-logo {
+	position: absolute;
+	width: 100px;
+	top: 40px; /* Definindo a distância do topo como 0 */
+	transition: opacity 0.5s ease;
+}
+  
+.overlay {
+  opacity: 0;
+	transition: opacity 0.5s ease;
+}
+  
+.header-container:hover .overlay {
+	opacity: 1;
+}
+
+.slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 2%;
+}
+
+.logo-text {
+	font-family: 'Mina', sans-serif;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+section {
+	min-height: 500px;
+}
+
+/*  --------------- CARROSEL : SLIDER ---------------  */
+.slider-carrosel {
+    display: block;
+    height: 293px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider-carrosel li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider-carrosel img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider-carrosel input {
+    display: none;
+}
+
+/*  --------------- CARDS LIST ---------------  */
+.title-content {
+	position: absolute;
+}
+
+.product_list {
+	background-color: rgb(255, 255, 255);
+	width: 60%;
+	min-height: 300px;
+	display: flex;
+	justify-content: space-around;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card-img {
+	width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product {
+	width: 250px;
+    height: 285px;
+	margin: 4% 2%;
+	padding: 5px;
+	border: 1px solid black;
+	text-align: center;
+	font-weight: bold;
+}
+
+.card-font {
+	padding: 3%;
+}
+
+.card-price {
+	font-weight: bold;
+}
+
+.button-buy {
+	position: relative;
+	font-size: 15px;
+	background-color: var(--COLOR_MEDIUMPURPLE);
+	border: none;
+	color: #FFFFFF;
+	width: 90%;
+	padding: 3%;
+	margin: 5px;
+	text-align: center;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.button-buy:hover {
+	font-size: 15px;
+	width: 90%;
+	padding: 3%;
+	background-color: #656cd1;
+}
+
+
+/*  --------------- FOOTER : SOCIALS ---------------  */
+footer {
+	text-align: center;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 25px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+  }
+  
+.fa:hover {
+	opacity: 0.7;
+  }
+
+.fa-facebook {
+	background: var(--COLOR_SOFTBLUE);
+	color: var(--COLOR_WHITE);
+}
+
+.fa-instagram
+{
+	background: #75B7F2;
+	color: var(--COLOR_WHITE);
+}
+
+.fa-whatsapp
+{
+	background:  var(--COLOR_GREEN);
+	color: var(--COLOR_WHITE);
+}
