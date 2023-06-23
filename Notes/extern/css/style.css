@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --purpleSoft: #9575DE;
+    --orangeColor: #F9A826;
 
 }
 
@@ -23,10 +23,14 @@ body {
 }
 
 .image-logo {
-    width: 25%;
+    width: 20%;
 }
 
 .title-page {
     font-size:16px;
     font-weight: bold;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: var(--orangeColor); !important;
 }
