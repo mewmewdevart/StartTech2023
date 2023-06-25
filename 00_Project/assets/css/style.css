@@ -67,13 +67,13 @@ body {
 .image-logo {
 	position: absolute;
 	width: 100px;
-	top: 40px; /* Definindo a distância do topo como 0 */
+	top: 40px;
 	transition: opacity 0.5s ease;
 }
   
 .overlay {
   opacity: 0;
-	transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
   
 .header-container:hover .overlay {
@@ -90,136 +90,140 @@ body {
 
 .logo-text {
 	font-family: 'Mina', sans-serif;
-	color: white;
+	color: var(--COLOR_WHITE);
 	font-size: 20px;
 	font-weight: bold;
 }
 
-section {
-	min-height: 500px;
+/*  --------------- SECTION CARD CONTENT ---------------  */
+#middle-content {
+	min-height: 80vh;
 }
 
-/*  --------------- CARROSEL : SLIDER ---------------  */
-.slider-carrosel {
-    display: block;
-    height: 293px;
-    width: 100%;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
+.card {
+	margin-top: 5%;
+	margin-right: 1%;
 }
 
-.slider-carrosel li {
-    list-style: none;
-    position: absolute;
+.card img {
+	padding-top: 10px;
+    width: 250px;
+    height:  250px;
+    max-height: 250px;
 }
 
-.slider-carrosel img {
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    vertical-align: top;
+.button {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #7AA8F3;
+  color: var(--COLOR_WHITE);
+  user-select: none;
+  font-weight: bold;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.slider-carrosel input {
-    display: none;
+.button  span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+  font-weight: bold;
 }
 
-/*  --------------- CARDS LIST ---------------  */
-.title-content {
-	position: absolute;
+.button span:last-child {
+  color: var(--COLOR_WHITE);
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
 }
 
-.product_list {
-	background-color: rgb(255, 255, 255);
-	width: 60%;
-	min-height: 300px;
-	display: flex;
-	justify-content: space-around;
-	margin-left: auto;
-	margin-right: auto;
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--COLOR_DARKPURPLE);
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+  font-weight: bold;
 }
 
-.card-img {
-	width: 200px;
-    height: 200px;
-    object-fit: cover;
+.button:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+  font-weight: bold;
 }
 
-.product {
-	width: 250px;
-    height: 285px;
-	margin: 4% 2%;
-	padding: 5px;
-	border: 1px solid black;
-	text-align: center;
-	font-weight: bold;
+.button:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+  font-weight: bold;
 }
 
-.card-font {
-	padding: 3%;
+.button-content {
+	margin-top: 30px;
 }
-
-.card-price {
-	font-weight: bold;
-}
-
-.button-buy {
-	position: relative;
-	font-size: 15px;
-	background-color: var(--COLOR_MEDIUMPURPLE);
-	border: none;
-	color: #FFFFFF;
-	width: 90%;
-	padding: 3%;
-	margin: 5px;
-	text-align: center;
-	-webkit-transition-duration: 0.4s; /* Safari */
-	transition-duration: 0.4s;
-	text-decoration: none;
-	overflow: hidden;
-	cursor: pointer;
-}
-
-.button-buy:hover {
-	font-size: 15px;
-	width: 90%;
-	padding: 3%;
-	background-color: #656cd1;
-}
-
 
 /*  --------------- FOOTER : SOCIALS ---------------  */
 footer {
-	text-align: center;
+  text-align: center;
+  background: var(--linear);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
 }
 
 .fa {
 	padding: 20px;
-	font-size: 30px;
-	width: 25px;
+	width: 50px;
+	height: 50px;
 	text-align: center;
 	text-decoration: none;
-	margin: 5px 2px;
-  }
-  
+	margin: 5px 5px;
+}
+
 .fa:hover {
-	opacity: 0.7;
-  }
+  opacity: 0.7;
+}
 
 .fa-facebook {
-	background: var(--COLOR_SOFTBLUE);
-	color: var(--COLOR_WHITE);
+  background: var(--COLOR_SOFTBLUE);
+  color: var(--COLOR_WHITE);
 }
 
-.fa-instagram
-{
-	background: #75B7F2;
-	color: var(--COLOR_WHITE);
+.fa-instagram {
+  background: #75B7F2;
+  color: var(--COLOR_WHITE);
 }
 
-.fa-whatsapp
-{
-	background:  var(--COLOR_GREEN);
-	color: var(--COLOR_WHITE);
+.fa-whatsapp {
+  background: var(--COLOR_GREEN);
+  color: var(--COLOR_WHITE);
 }
