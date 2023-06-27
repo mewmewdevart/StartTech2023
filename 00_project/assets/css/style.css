@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(cssReset.css);
+
+:root {
+    --bgColorPurple: #bd9eff;
+    --bgColorWhite: #FDFEFF;
+
+    --colorTitleFont: #4B4B4B;
+    --colortSoftText: #B4AEAE;
+
+    --colorDestaque: #ED2590;
+}
+
+nav {
+    background-color: white;
+    height: 92px;
+}
+
+nav img {
+    width: 107px;
+    height: 32px;
+    padding-top: 25px;
+    padding-left: 18.3%;
+}
+
+body {
+    background-color: var(--bgColorPurple);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.my-card {
+    background-color: var(--bgColorWhite);
+    width: 280px;
+    height: 324px;
+    border-radius: 16px;
+    margin-right: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.my-card img{
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    border: 3px solid var(--colorDestaque);
+}
+
+.my-card h1{
+    color: var(--colorTitleFont);
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 24px;
+}
+.my-card p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.my-edit {
+    background-color: var(--bgColorWhite);
+    width: 280px;
+    height: 56px;
+    border-radius: 16px;
+    margin-top: 30px;
+}
+
+.my-edit p {
+    padding-top: 20px;
+    color: var(--colorDestaque);
+    height: 18px;
+    text-align: center;
+}
+
+.my-content {
+    background-color: var(--bgColorWhite);
+    width: 592px;
+    height:878px;
+    border-radius: 16px;
+    margin-right: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.container-content {
+    text-align: left;
+}
+
+.container-content h2 {
+    color: var(--colorTitleFont);
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.container-content .box-content {
+    margin-top: 20px;
+    width: 87%;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background-color: var(--bgColorPurple);
+    border-radius: 5px;
+  }
+  
+  .container-content .box-content::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -10px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent var(--bgColorPurple)transparent transparent;
+}
+
+.container-content .bar-status {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    width: 94%;
+}
+
+.container-content .bar-status .box {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+.svg-ice {
+    background-color: #26CAFF;
+}
+
+.container-content .bar-status h3 {
+    padding-bottom: 10px;
+}
+
+.my-friends {
+    background-color: var(--bgColorWhite);
+    width: 280px;
+    height: 411px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+
+.my-community {
+    background-color: var(--bgColorWhite);
+    width: 280px;
+    height: 411px;
+    border-radius: 16px;
+}
+
+.line-content {
+    margin-top: 25px;
+    Width: 100%;
+    Height: 19px;
+}
+
+.line-content h4 {
+    color: var(--softText);
+    display: inline-block;
+}
+
+.line-content p {
+    font-size: 16px;
+    color: #4B4B4B;
+    display: inline-block;
+}
+
+.line-content .p-box{
+    border: 1px solid var(--colorDestaque);
+    border-radius: 30px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.line-content .p-showMore {
+    color: var(--colorDestaque);
+}
+
+.container-community h2 {
+    font-size: 18px;
+}
+
+.container-community .header-friends {
+    width: 84%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.container-community .header-friends p {
+    color: var(--colorDestaque);
+    font-size: 18px;
+}
+
+.container-community .header-community {
+    width: 84%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.container-community .header-community p {
+    color: var(--colorDestaque);
+    font-size: 18px;
+}
+
+
+.container-community .my-friends {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.box-friends {
+    margin-top: 20px;
+    margin-right: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.container-community .box-friends img{
+    margin-top: 20px;
+    Width: 56px;
+    Height: 56px;
+    border-radius: 50%;
+}
+
+.container-community .my-community{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.box-community {
+    margin-top: 20px;
+    margin-right: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.container-community .box-community img{
+    margin-top: 20px;
+    Width: 56px;
+    Height: 56px;
+    border-radius: 20%;
+}
