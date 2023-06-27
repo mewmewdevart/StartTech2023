@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+}
+
+:root {
+    --purpleColor: #9376E0;
+    --pinkColor: #E893CF;
+
+    --blackColor: #212c3b;
+    --whiteColor: #FBFFDC;
+}
+
+.elementoPai {
+    background-color: var(--purpleColor);
+    width: 250px;
+    height: 250px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.elementoFilho {
+    background-color: var(--pinkColor);
+    width: 50px;
+    height: 50px;
+}

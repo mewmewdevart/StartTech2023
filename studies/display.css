@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+}
+
+:root {
+    --purpleColor: #9376E0;
+    --pinkColor: #E893CF;
+
+    --blackColor: #212c3b;
+    --whiteColor: #FBFFDC;
+}
+
+body, h1, h2 {
+    display: inline;
+}
+
+.teste {
+    position: absolute; /* Um elemento com absolute tem seu posicionamento relacionado com o
+    elemento pai e não com o elemento anterior, */
+    background-color: var(--purpleColor);
+    width: 300px;
+    height: 300px;
+    right: 0px;
+}
+
+.teste2 {
+    position:relative; /*Um elemento com relative tem seu posicionamento relacionado com o
+    elemento anterior. */
+    background-color: var(--pinkColor);
+    width: 300px;
+    height: 300px;
+}
+
+.elementoFilho {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background-color: yellow;;
+}
