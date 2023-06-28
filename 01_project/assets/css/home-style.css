@@ -1,0 +1,85 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~ MY CARDS: LEFT  ~~~~~~~~~~~~~~~~~~~~~~~ */
+.container-fluid  .container .my-card-home {
+    background-color: var(--white-background-color);
+    width: 280px;
+    height: 843px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.container-fluid  .container .my-card-home .header-card h2{
+    color: var(--title-font-color);
+    font: 500;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.container-fluid  .container .my-card-home .header-card p{
+    color: var(--title-font-color);
+    font-weight: 400;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.container-fluid  .container .my-card-home .header-card img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+.container-fluid  .container .my-card-home .header-card {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container-fluid  .container .my-card-home .container-card {
+    margin-top: 30px;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.container-fluid  .container .my-card-home .container-card .my-card-pages {
+    background-color: blue;
+    margin-top: 10px;
+}
+
+.container-fluid  .container .my-card-home .container-card .my-card-pages p {
+    margin-top: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.container-fluid  .container .my-card-home .container-card .my-card-hobbies {
+    background-color: yellow;
+    margin-top: 10px;
+}
+
+.container-fluid  .container .my-card-home .container-card .my-card-hobbies p {
+    margin-top: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.container-fluid  .container .my-card-home .container-card .my-card-interests {
+    background-color: red;
+    margin-top: 15px;
+}
+
+.container-fluid  .container .my-card-home .container-card .my-card-interests p {
+    margin-top: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ INFORMATIONS CENTER ~~~~~~~~~~~~~~~~~~~~~~~ */
+.container-fluid .container .my-content-home{
+    background-color: var(--white-background-color);
+    width: 592px;
+    height: 843px;
+    border-radius: 16px;
+    padding: 20px;
+}
