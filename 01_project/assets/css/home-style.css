@@ -76,7 +76,7 @@
     margin-top: 10px;
 }
 
-.container-fluid  .container .my-card-home .container-card .my-card-pages p {
+.container-fluid  .container .my-card-home .container-card .my-card-pages li {
     margin-top: 15px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -87,7 +87,7 @@
     margin-top: 10px;
 }
 
-.container-fluid  .container .my-card-home .container-card .my-card-hobbies p {
+.container-fluid  .container .my-card-home .container-card .my-card-hobbies li {
     margin-top: 15px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -98,7 +98,7 @@
     margin-top: 15px;
 }
 
-.container-fluid  .container .my-card-home .container-card .my-card-interests p {
+.container-fluid  .container .my-card-home .container-card .my-card-interests li {
     margin-top: 10px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -108,7 +108,7 @@
 .container-fluid .container .my-content-home{
     background-color: var(--white-background-color);
     width: 592px;
-    min-height: 843px;
+    min-height: 852px;
     border-radius: 16px;
     padding: 20px;
 }
@@ -123,6 +123,14 @@
 
 .container-fluid .container .my-content-home .text-box p {
     opacity: 0.5;
+}
+
+.post-text {
+    margin-top: 10px;
+    background-color: var(--purple-background-color);
+    color: var(--white-background-color);
+    float: right;
+    margin-bottom: 10px;
 }
 
 .container-fluid .container .my-content-home .card {
