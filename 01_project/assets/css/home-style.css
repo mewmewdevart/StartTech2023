@@ -25,10 +25,38 @@
     font-size: 18px;
 }
 
-.container-fluid  .container .my-card-home .header-card img {
+.container-fluid  .container .my-card-home .header-card .status{
+    display: inline-block;
+}
+
+.container-fluid  .container .my-card-home .header-card .emoji{
+    background-color: #03C988;
+    border-radius: 100%;
+    width: 20px;
+    height:20px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.container-fluid  .container .my-card-home .header-card .image-container img {
     width: 170px;
     height: 170px;
     border-radius: 50%;
+}
+
+.container-fluid  .container .my-card-home .header-card .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+.container-fluid  .container .my-card-home .header-card .image-container .status {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(121, 242, 117); /* Cor da bolinha de status */
+    border-radius: 50%;
+    bottom: 5px;
+    right: 30px;
 }
 
 .container-fluid  .container .my-card-home .header-card {
@@ -37,6 +65,7 @@
 }
 
 .container-fluid  .container .my-card-home .container-card {
+    width: 100%;
     margin-top: 30px;
     align-self: flex-start;
     text-align: left;
@@ -79,7 +108,50 @@
 .container-fluid .container .my-content-home{
     background-color: var(--white-background-color);
     width: 592px;
-    height: 843px;
+    min-height: 843px;
     border-radius: 16px;
     padding: 20px;
+}
+
+.container-fluid .container .my-content-home .text-box {
+    padding: 20px;
+    width: 100%;
+    height: 105px;
+    border-radius: 16px 32px;
+    border: 2px solid var(--soft-purple-bg-color);
+}
+
+.container-fluid .container .my-content-home .text-box p {
+    opacity: 0.5;
+}
+
+.container-fluid .container .my-content-home .card {
+    border-color: none;
+    margin-top: 10px;
+}
+
+.container-fluid .container .my-content-home .card .card-body .header-card-post {
+    display: flex;
+    align-items: center;
+}
+
+.container-fluid .container .my-content-home .card .card-body .header-card-post .card-profile {
+    border-radius: 100%;
+    width: 56px;
+    height: 56px;
+}
+
+.container-fluid .container .my-content-home .card .card-body .header-card-post h5 {
+    padding-left: 10px;
+}
+
+.container-fluid .container .my-content-home .card .card-body .header-card-post {
+    border-color: none;
+    margin-top: 10px;
+}
+
+.container-fluid .container .my-content-home .card  .card-time {
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
 }
