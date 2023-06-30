@@ -38,7 +38,7 @@ body {
 .navbar .nav-container {
     margin: 0 auto;
     text-align: center;
-    width: 64%;
+    width: 92%;
 }
 
 .navbar .nav-link {
@@ -79,24 +79,30 @@ body {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~ MAIN SETTINGS : ALL CONTAINERS ~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .container-fluid {
     margin-top: 30px;
-    width: 75%;
+    margin-bottom: 30px;
+    width: 95%;
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
+.container-fluid .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~ MY CARDS: LEFT  ~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .container-fluid  .container .my-card {
     background-color: var(--white-background-color);
     width: 280px;
     height: 324px;
     border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding-top: 30px;
+    text-align: center;
 }
 
 .container-fluid  .container .my-card img{
@@ -125,9 +131,7 @@ body {
     height: 56px;
     margin-top: 20px;
     border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .container-fluid .container .my-edit a {
@@ -310,3 +314,10 @@ body {
     width: 56px;
     height: 56px;
 }
+
+
+@media (max-width: 500px) {
+    .container-fluid {
+      background-color: blue;
+    }
+  }

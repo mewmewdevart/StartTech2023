@@ -1,13 +1,14 @@
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~ MY CARDS: LEFT  ~~~~~~~~~~~~~~~~~~~~~~~ */
 .container-fluid  .container .my-card-home {
     background-color: var(--white-background-color);
     width: 280px;
-    height: 843px;
+    height: 852px;
     border-radius: 16px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: column;
+    border-radius: 16px;
+    padding-top: 30px;
+    text-align: center;
     padding: 20px;
 }
 
@@ -72,8 +73,17 @@
 }
 
 .container-fluid  .container .my-card-home .container-card .my-card-pages {
-    background-color: blue;
     margin-top: 10px;
+}
+
+.container-fluid  .container .my-card-home .container-card .my-card-pages a {
+    color: var(--title-font-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--title-font-color);
+    text-decoration: none;
 }
 
 .container-fluid  .container .my-card-home .container-card .my-card-pages li {
@@ -83,7 +93,6 @@
 }
 
 .container-fluid  .container .my-card-home .container-card .my-card-hobbies {
-    background-color: yellow;
     margin-top: 10px;
 }
 
@@ -94,7 +103,6 @@
 }
 
 .container-fluid  .container .my-card-home .container-card .my-card-interests {
-    background-color: red;
     margin-top: 15px;
 }
 
@@ -155,7 +163,6 @@
 
 .container-fluid .container .my-content-home .card .card-body .header-card-post {
     border-color: none;
-    margin-top: 10px;
 }
 
 .container-fluid .container .my-content-home .card  .card-time {
@@ -163,3 +170,22 @@
     bottom: 0px;
     right: 30px;
 }
+
+.container-fluid .container .my-content-home .loading-text {
+    text-align: center;
+    opacity: 0.3;
+    animation: fadeInOut 2s ease-in-out infinite;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.3;
+    }
+  }
+  
