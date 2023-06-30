@@ -10,7 +10,7 @@
 
 <p align="center">
 	<b><i> Minha solução para o primeiro projeto/desafio do módulo: "Criando um site estático" do curso Start Tech.. </i></b><br>
-  <a href="https://mewmewdevart.github.io/StartTech2023/01_project/index.html">Acesse o projeto desenvolvido</a>
+  <a href="https://mewmewdevart.github.io/StartTech2023/01_project/index.html" target="_blank" >Acesse o projeto desenvolvido</a>
 </p>
 
 </p>
