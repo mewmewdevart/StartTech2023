@@ -17,6 +17,8 @@ button.my-edit {
     --soft-text-color: rgb(180, 174, 174);
   
     --highlight-color: rgb(237, 37, 144);
+
+    --colorCardsBG: rgb(249, 245, 250);
 }
 
 body {
@@ -315,6 +317,15 @@ body {
     height: 56px;
 }
 
+footer {
+    text-align: center;
+}
+
+footer a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-background-color)
+}
 
 @media (max-width: 500px) {
     .container-fluid {

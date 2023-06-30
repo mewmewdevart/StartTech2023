@@ -4,7 +4,7 @@
 .container-fluid  .container .my-card-home {
     background-color: var(--white-background-color);
     width: 280px;
-    height: 852px;
+    height: 720px;
     border-radius: 16px;
     border-radius: 16px;
     padding-top: 30px;
@@ -87,6 +87,7 @@ a:hover {
 }
 
 .container-fluid  .container .my-card-home .container-card .my-card-pages li {
+    background-color: var(--colorCardsBG);
     margin-top: 15px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -97,6 +98,7 @@ a:hover {
 }
 
 .container-fluid  .container .my-card-home .container-card .my-card-hobbies li {
+    background-color: var(--colorCardsBG);
     margin-top: 15px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -107,6 +109,7 @@ a:hover {
 }
 
 .container-fluid  .container .my-card-home .container-card .my-card-interests li {
+    background-color: var(--colorCardsBG);
     margin-top: 10px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -169,6 +172,20 @@ a:hover {
     position: absolute;
     bottom: 0px;
     right: 30px;
+}
+
+.card-img-bottom {
+    padding-top: 15px;
+}
+
+.card {
+    background-color: var(--colorCardsBG);
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+.card p {
+    padding-top: 15px;
 }
 
 .container-fluid .container .my-content-home .loading-text {
