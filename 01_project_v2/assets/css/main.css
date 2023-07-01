@@ -66,6 +66,14 @@ body {
 
 /* ~~~~~~~~~~~~~~~~ PAGE CONTENT ~~~~~~~~~~~~~~~~ */
 
+.put-margin-1 {
+    margin-right: 10px;
+}
+
+.put-margin-2 {
+    margin-left: 10px;
+}
+
 .container-fluid  .container-left-main {
     background-color: var(--white-background-color);
     width: 100%;
@@ -90,3 +98,14 @@ body {
     height: 852px;
     border-radius: 16px;
 }
+
+@media (max-width: 600px) {
+    .put-margin-1 {
+      margin-right: 0px;
+    }
+    
+    .put-margin-2 {
+      margin-left: 0px;
+    }
+  }
+  
