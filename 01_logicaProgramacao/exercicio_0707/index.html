@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercises</title>
+</head>
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="container forms">
+                <div class="header-form">
+                    <img src="student.png" width="100px" alt="">
+                    <h1>Average Calculator</h1>
+                    <p>Insert four grades to calculate the average!</p>
+                </div>
+                <div class="body-form">
+                    <form action="formAverage">
+                        <input type="number" id="note_student1" name="note1" placeholder="Enter the first grade">
+                        <input type="number" id="note_student2" name="note2" placeholder="Enter the second grade">
+                        <input type="number" id="note_student3" name="note3" placeholder="Enter the third grade">
+                        <input type="number" id="note_student4" name="note4" placeholder="Enter the fourth grade"> <br>
+                        <input type="submit" value="Send" class="button-59">
+                    </form>
+                </div>
+                <div class="result-form">
+                    <p>Média: <div id="answer_student"></div></p>
+                </div>
+            </div>
+
+            <div class="container forms">
+                <div class="header-form">
+                    <img src="governante.png" width="100px" alt="">
+                    <h1>Circle Radius Calculator</h1>
+                    <p>Insert the radius of a circle to calculate its area.</p>
+                </div>
+                <div class="body-form">
+                    <form action="formCircleRadius">
+                        <input type="number" id="nbr_circle" name="nota1" placeholder="Digite o raio">
+                        <input type="submit" value="Send" class="button-59">
+                    </form>
+                </div>
+                <div class="result-form">
+                    <p>Raio: <div id="answer_circle"></div></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
