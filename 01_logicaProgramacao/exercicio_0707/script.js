@@ -32,4 +32,15 @@ formCircle.addEventListener('submit', function(e) {
     div.innerHTML = radius_result;
 });
 
+// Fahrenheit to Celsius
+let formFahr = document.querySelector('form[action="formFahrToCelsius"]');
+        
+formFahr.addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    
+    let numberFahr = document.getElementById('nbr_fahrenheit').value;
+    let numberCelsius = 5 * ((numberFahr-32) / 9);
 
+    var div = document.getElementById("answer_fahr");
+    div.innerHTML = numberCelsius;
+});
