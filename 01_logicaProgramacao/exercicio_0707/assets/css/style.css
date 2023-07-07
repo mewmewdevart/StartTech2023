@@ -18,6 +18,13 @@ body {
     justify-content: center;
 }
 
+section .title, section .paragraph, footer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
 .container-fluid .forms {
     text-align: center;
     background-color: var( --colorCard);

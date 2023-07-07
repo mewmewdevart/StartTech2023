@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Exercises</title>
 </head>
 <body>
     <section>
+        <h1 class="title">Lógica de Programação I (JS/TS)</h1>
+        <p class="paragraph">Exercise to be fixed in the mind (07/07)</p>
         <div class="container-fluid">
             <div class="container forms">
                 <div class="header-form">
-                    <img src="student.png" width="100px" alt="">
+                    <img src="assets/images/student.png" width="100px" alt="">
                     <h1>Average Calculator</h1>
                     <p>Insert four grades to calculate the average!</p>
                 </div>
@@ -31,7 +33,7 @@
 
             <div class="container forms">
                 <div class="header-form">
-                    <img src="governante.png" width="100px" alt="">
+                    <img src="assets/images/governante.png" width="100px" alt="">
                     <h1>Circle Radius Calculator</h1>
                     <p>Insert the radius of a circle to calculate its area.</p>
                 </div>
@@ -48,7 +50,7 @@
 
             <div class="container forms">
                 <div class="header-form">
-                    <img src="hot.png" width="100px" alt="">
+                    <img src="assets/images/hot.png" width="100px" alt="">
                     <h1>Fahrenheit to Celsius</h1>
                     <p>Insert the fahrenheit to convert to celsius.</p>
                 </div>
@@ -62,9 +64,51 @@
                     <p>Celsius: <div id="answer_fahr"></div></p>
                 </div>
             </div>
+
+            <div class="container forms">
+                <div class="header-form">
+                    <img src="assets/images/room.png" width="100px" alt="">
+                    <h1>Room Calculator</h1>
+                    <p>Insert the length and the width of the room to be calculated.</p>
+                </div>
+                <div class="body-form">
+                    <form action="formRoomCalculator">
+                        <input type="number" id="nbr_length" name="nbr_l1" placeholder="Insert length of the room">
+                        <input type="number" id="nbr_width" name="nbr_w1" placeholder="Insert the width of the room">
+                        <input type="submit" value="Send" class="button-59">
+                    </form>
+                </div>
+                <div class="result-form">
+                    <p>Room area: <span id="answer_area"></span></p>
+                    <p>Room Perimeter: <span id="answer_perimeter"></span></p>
+                </div>
+            </div>
+
+            <div class="container forms">
+                <div class="header-form">
+                    <img src="assets/images/repair.png" width="100px" alt="">
+                    <h1>Repair the Kitchen</h1>
+                    <p>Insert the area of Kitchen to be filled with tiles.</p>
+                </div>
+                <div class="body-form">
+                    <form action="formKitchen">
+                        <input type="number" id="nbr_kitchenLength" name="nbr1" placeholder="Insert the length of kitchen">
+                        <input type="number" id="nbr_kitchenWidth" name="nbr2" placeholder="Insert the width of kitchen">
+                        <input type="submit" value="Send" class="button-59">
+                    </form>
+                </div>
+                <div class="result-form">
+                    <p>You: <span id="answer_tiles"></span> Tiles</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <footer>
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" target="_blank" href="https://github.com/mewmewdevart/StartTech2023">Larissa Cristina Benedito</a>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

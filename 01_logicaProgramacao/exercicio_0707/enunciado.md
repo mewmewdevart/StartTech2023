@@ -9,4 +9,6 @@ Atividade de Fixação 1
 
 5 - Escreva um programa para ler as dimensões de uma cozinha retangular, em seguida calcular e escrever a quantidade de caixas de azulejos necess arias para cobrir o chão da cozinha. Cada caixa de azulejos possui 2,5 m2.
 
+Quantidade de caixas de azulejos = Área da cozinha / Área por caixa de azulejos
+
 EXTRA (+200XP): A entrada de dados deve ser feita através do HTML e não de prompt.
