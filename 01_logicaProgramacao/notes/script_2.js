@@ -46,8 +46,6 @@ let celsius_2 = parseFloat(prompt("Digite a temperatura em Celsius")); // Conver
 let fahr_2 = converte_para_fahr(celsius);
 console.log(fahr_2 );
 
-
-
 // Funções com retorno para Void : Não possui um valor de retorno especifico
 function mostra_temperatura(temp, unidade = " Celsius") {
     // Unidade possui um valor DEFAULT (padrão) caso o usuario nao tenha passada um valor fixo para este parametro
@@ -56,7 +54,7 @@ function mostra_temperatura(temp, unidade = " Celsius") {
 mostra_temperatura(35, " Kalvin");
 mostra_temperatura(35);
 
-// FUnção anonima : O nome dela se torna imc
+// Função anonima : O nome dela se torna imc
 let calcula_imc = function (altura, peso) {
     return (peso/altura**2);
 }
