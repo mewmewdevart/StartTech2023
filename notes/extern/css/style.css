@@ -8,12 +8,12 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    
+    font-size: 16px;    
 }
 
 #headerStart {
     padding: 3%;
+    margin-top: 40px;
 }
 
 .titleStart {
@@ -23,7 +23,7 @@ body {
 }
 
 .image-logo {
-    width: 20%;
+    width: 450px;
 }
 
 .title-page {
@@ -31,6 +31,6 @@ body {
     font-weight: bold;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: var(--orangeColor); !important;
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn {
+    background-color: var(--orangeColor) !important;
 }
