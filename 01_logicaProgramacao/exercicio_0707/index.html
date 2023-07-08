@@ -4,79 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Exercises</title>
+    <title>Atividade de Fixacao</title>
 </head>
 <body>
+    <header>
+            <h1 class="title">Lógica de Programação I (JS/TS)</h1>
+            <p class="paragraph">Exercise to be fixed in my mind (2023/07/07)</p>
+    </header>
     <section>
-        <h1 class="title">Lógica de Programação I (JS/TS)</h1>
-        <p class="paragraph">Exercise to be fixed in the mind (07/07)</p>
         <div class="container-fluid">
-            <div class="container forms">
-                <div class="header-form">
-                    <img src="assets/images/student.png" width="100px" alt="">
+            <div class="container card">
+                <div class="header-card">
+                    <img src="assets/images/lista.png" alt="list icon">
                     <h1>Average Calculator</h1>
-                    <p>Insert four grades to calculate the average!</p>
+                    <p>Insert four grades to calculate the average:</p>
                 </div>
                 <div class="body-form">
                     <form action="formAverage">
-                        <input type="number" id="note_student1" name="note1" placeholder="Enter the first grade">
-                        <input type="number" id="note_student2" name="note2" placeholder="Enter the second grade">
-                        <input type="number" id="note_student3" name="note3" placeholder="Enter the third grade">
-                        <input type="number" id="note_student4" name="note4" placeholder="Enter the fourth grade"> <br>
-                        <input type="submit" value="Send" class="button-59">
+                      <input type="text" id="note_student1" name="note1" placeholder="Enter the first grade">
+                      <input type="text" id="note_student2" name="note2" placeholder="Enter the second grade">
+                      <input type="text" id="note_student3" name="note3" placeholder="Enter the third grade">
+                      <input type="text" id="note_student4" name="note4" placeholder="Enter the fourth grade"> <br>
+                      <input type="submit" value="Send" class="button_type">
                     </form>
-                </div>
+                  </div>
                 <div class="result-form">
-                    <p>Média: <div id="answer_student"></div></p>
+                    <p>Media:
+                    <div id="answer_student"></div>
+                    </p>
                 </div>
             </div>
-
-            <div class="container forms">
-                <div class="header-form">
-                    <img src="assets/images/governante.png" width="100px" alt="">
+            <div class="container card">
+                <div class="header-card">
+                    <img src="assets/images/bussola.png" alt="scale icon">
                     <h1>Circle Radius Calculator</h1>
                     <p>Insert the radius of a circle to calculate its area.</p>
                 </div>
                 <div class="body-form">
                     <form action="formCircleRadius">
                         <input type="number" id="nbr_circle" name="nota1" placeholder="Insert the circle area">
-                        <input type="submit" value="Send" class="button-59">
-                    </form>
+                        <input type="submit" value="Send" class="button_type">
+                      </form>
                 </div>
                 <div class="result-form">
-                    <p>Raio: <div id="answer_circle"></div></p>
+                    <p>Radius:
+                    <div id="answer_circle"></div>
+                    </p>
                 </div>
             </div>
 
-            <div class="container forms">
-                <div class="header-form">
-                    <img src="assets/images/hot.png" width="100px" alt="">
+            <div class="container card">
+                <div class="header-card">
+                    <img src="assets/images/temperatura.png" alt="temperature icon">
                     <h1>Fahrenheit to Celsius</h1>
                     <p>Insert the fahrenheit to convert to celsius.</p>
                 </div>
                 <div class="body-form">
                     <form action="formFahrToCelsius">
-                        <input type="number" id="nbr_fahrenheit" name="nbr1" placeholder="Insert the fahrenheit">
-                        <input type="submit" value="Send" class="button-59">
+                      <input type="number" id="nbr_fahrenheit" name="nbr1" placeholder="Insert the fahrenheit">
+                      <input type="submit" value="Send" class="button_type">
                     </form>
                 </div>
                 <div class="result-form">
-                    <p>Celsius: <div id="answer_fahr"></div></p>
+                    <p>Celsius:
+                    <div id="answer_fahr"></div>
+                    </p>
                 </div>
             </div>
 
-            <div class="container forms">
-                <div class="header-form">
-                    <img src="assets/images/room.png" width="100px" alt="">
+
+            <div class="container card">
+                <div class="header-card">
+                    <img src="assets/images/sofa.png" alt="Room icon">
                     <h1>Room Calculator</h1>
                     <p>Insert the length and the width of the room to be calculated.</p>
                 </div>
                 <div class="body-form">
-                    <form action="formRoomCalculator">
-                        <input type="number" id="nbr_length" name="nbr_l1" placeholder="Insert length of the room">
-                        <input type="number" id="nbr_width" name="nbr_w1" placeholder="Insert the width of the room">
-                        <input type="submit" value="Send" class="button-59">
-                    </form>
+                  <form action="formRoomCalculator">
+                    <input type="number" id="nbr_length" name="nbr_l1" placeholder="Insert length of the room">
+                    <input type="number" id="nbr_width" name="nbr_w1" placeholder="Insert the width of the room">
+                    <input type="submit" value="Send" class="button_type">
+                  </form>
                 </div>
                 <div class="result-form">
                     <p>Room area: <span id="answer_area"></span></p>
@@ -84,29 +92,30 @@
                 </div>
             </div>
 
-            <div class="container forms">
-                <div class="header-form">
-                    <img src="assets/images/repair.png" width="100px" alt="">
+            <div class="container card">
+                <div class="header-card">
+                    <img src="assets/images/tijolo.png" alt="Repair icon">
                     <h1>Repair the Kitchen</h1>
                     <p>Insert the area of Kitchen to be filled with tiles.</p>
                 </div>
                 <div class="body-form">
                     <form action="formKitchen">
-                        <input type="number" id="nbr_kitchenLength" name="nbr1" placeholder="Insert the length of kitchen">
-                        <input type="number" id="nbr_kitchenWidth" name="nbr2" placeholder="Insert the width of kitchen">
-                        <input type="submit" value="Send" class="button-59">
+                      <input type="number" id="nbr_kitchenLength" name="nbr1" placeholder="Insert the length of kitchen">
+                      <input type="number" id="nbr_kitchenWidth" name="nbr2" placeholder="Insert the width of kitchen">
+                      <input type="submit" value="Send" class="button_type">
                     </form>
-                </div>
-                <div class="result-form">
-                    <p>You: <span id="answer_tiles"></span> Tiles</p>
-                </div>
+                  </div>
+                  <div class="result-form">
+                    <p>You need : <span id="answer_tiles"></span> Tiles</p>
+                  </div>
             </div>
         </div>
     </section>
 
     <footer>
         © 2023 Copyright:
-        <a class="text-reset fw-bold" target="_blank" href="https://github.com/mewmewdevart/StartTech2023">Larissa Cristina Benedito</a>
+    <a class="text-footer" target="_blank" href="https://github.com/mewmewdevart/StartTech2023">Larissa Cristina
+          Benedito</a>
     </footer>
 
     <script src="assets/js/script.js"></script>

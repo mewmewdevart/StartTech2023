@@ -1,57 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url(css-reset.css);
 
-:root {
-    --colorBackground: rgb(209, 188, 255);
-    --colorCard: white;
-
-    --colorMain: #7a3ffb;
-    --colorSoft:rgb(175, 138, 255);
-}
-
-body {
-    background-color: var(--colorBackground);
-    font-family: 'Roboto', sans-serif;
-}
-.container-fluid {
-    display: flex;
-    justify-content: center;
-}
-
-section .title, section .paragraph, footer {
-  margin-top: 10px;
-  text-align: center;
-}
-
-
-
-.container-fluid .forms {
-    text-align: center;
-    background-color: var( --colorCard);
-    width: 284px;
-    height: 410px;
-    border-radius: 16px;
-    padding: 20px;
-    margin-right: 20px;
-    margin-top: 30px;
-}
-
-.container-fluid .forms .header-form {
-
-}
-
-.container-fluid .forms .body-form input {
-    margin-top: 10px;
-    padding: 5px;
-}
-
-.container-fluid .forms .result-form {
-    border-radius: 5px;
-    background-color: var(--colorSoft);
-    margin-top: 10px;
-    padding: 5px;
-}
-
 /* Hide Input Number Arrows : Forms*/
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -65,52 +14,112 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-/* BUTTON IMPORTED: https://getcssscan.com/css-buttons-examples*/
-.button-59 {
-  align-items: center;
-  background-color: #fff;
-  border: 2px solid #000;
-  box-sizing: border-box;
-  color: #000;
-  cursor: pointer;
-  display: inline-flex;
-  fill: #000;
-  font-family: Inter,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  height: 48px;
-  justify-content: center;
-  letter-spacing: -.8px;
-  line-height: 24px;
-  min-width: 140px;
-  outline: 0;
-  padding: 0 17px;
-  text-align: center;
-  text-decoration: none;
-  transition: all .3s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-59:focus {
-  color: #171e29;
-}
-
-.button-59:hover {
-  border-color: var(--colorMain);
-  color: var(--colorMain);
-  fill: var(--colorMain);
-}
-
-.button-59:active {
-  border-color: var(--colorMain);
-  color: var(--colorMain);
-  fill: var(--colorMain);
-}
-
-@media (min-width: 768px) {
-  .button-59 {
-    min-width: 170px;
+:root {
+    --purple: #655DBB;
+    --purple-dark: rgb(84, 76, 170);
+    --gray: #ede4fd;
+    --white: #FFF;
+    --white-soft: #e0d0fc;
+  
+    --title: #313131;
+    --text: #B6B6B6;
+    
+    --linear: linear-gradient(90deg, #655DBB 0%, #BFACE2 100%);
   }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--gray);
+  font-size: 18px;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    left: 0px;
+    top: 0px;
+    background: var(--linear);
+    text-align: center;
+}
+
+header h1{
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 70px;
+}
+
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-fluid .container {
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: var(--white);
+  width: 295px;
+  height: 395px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.container-fluid .container h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container-fluid .container img {
+  width: 100px;
+  height: 100px;
+}
+
+.container-fluid .container .body-form {
+  position: absolute;
+  bottom: 72px; 
+  margin-top: 20px; 
+}
+
+.container-fluid .container .body-form form input{
+  width: 175px;
+  margin-top: 2px;
+  padding: 5px;
+}
+
+.container-fluid .container .body-form form .button_type{
+  background: transparent;
+  border-style: solid black;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+
+.container-fluid .container .body-form form .button_type:hover{
+  background: #977cd2;
+  cursor: pointer;
+  width: 180px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.container-fluid .container .result-form {
+  font-size: 16px;
+  background-color: #e0d0fc;
+  border-radius: 10px;
+  padding: 5px;
+  width: 175px;
+  position: absolute;
+  bottom: 15px;
+  margin-top: 20px; 
+}
+
+footer {
+  margin-top: 10px;
+  text-align: center;
 }
