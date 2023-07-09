@@ -1,119 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Atividade de Fixacao : 11/07</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Atividade de Fixacao : 11/07</title>
 </head>
 <body>
-    <header>
-            <h1 class="title">Lógica de Programação I (JS/TS)</h1>
-            <p class="paragraph">Exercise to be fixed in my mind (2023/07/11)</p>
-    </header>
-    <section>
-        <div class="container-fluid">
-            <div class="container card">
-                <div class="header-card">
-                    <!-- <img src="assets/images/lista.png" alt="list icon"> -->
-                    <h1>Average and Product Calculator</h1>
-                    <p>Insert two numbers to calculate their average and product:</p>                    
-                </div>
-                <div class="body-form">
-                    <form action="formAverageProduct">
-                      <input type="text" id="nbr_1_1" name="number1" placeholder="Enter the one number">
-                      <input type="text" id="nbr_1_2" name="number2" placeholder="Enter the other number">
-                      <input type="submit" value="Send" class="button_type">
-                    </form>
-                  </div>
-                <div class="result-form">
-                    <p>Media: <div id="answer_media"></div></p>
-                    <p>Product: <div id="answer_product"></div></p>
-                </div>
-            </div>
+	<header>
+			<img src="assets/images/me.svg" width="175px" alt="">
+			<h1 class="title">Lógica de Programação I (JS/TS)</h1>
+			<p class="paragraph">Exercise to be fixed in my mind (2023/07/11)</p>
+	</header>
 
-            <div class="container card">
-                <div class="header-card">
-                    <!-- <img src="assets/images/lista.png" alt="list icon"> -->
-                    <h1>Average Pondered Calculator(STANDARD)</h1>
-                    <p>Please provide the following information:</p>          
-                </div>
-                <div class="body-form">
-                    <form action="formAveragePondered">
-                        <input type="text" id="nbr_2_4" name="number4" placeholder="Insert the score obtained on the first exam">
-                        <input type="text" id="nbr_2_5" name="number5" placeholder="Insert the score obtained on the second exam">
-                
-                        <input type="text" id="nbr_2_3" name="number3" placeholder="Insert the student's ID">
-                
-                        <input type="text" id="nbr_2_1" name="number1" placeholder="Insert the weight of the first exam">
-                        <input type="text" id="nbr_2_2" name="number2" placeholder="Insert the weight of the second exam">
-                        <input type="submit" value="Send" class="button_type">
-                    </form>
-                </div>
-                <div class="result-form">
-                    <p>The student with ID <div id="answer_pondered_name"></div> has an average pondered score of <div id="answer_pondered"></div></p>
-                </div>
-            </div>
+	<section>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="card">
+					<div class="card-image">
+						<img src="assets/images/icon-study.png" width="150px" alt="">
+						<div class="card-info">
+							<h1>Average and Product Calculator</h1>
+							<p>Insert two numbers to calculate the student's average and product of the multiplication:</p>
+						</div>
+					</div>
+					<form action="formAverageProduct" class="card-form">
+						<div class="input">
+							<input type="text" id="nbr_1_1" class="input-field" name="number1" required />
+							<label class="input-label">Insert one number here</label>
+						</div>
+						<div class="input">
+							<input type="text" id="nbr_1_2" class="input-field" name="number1" required />
+							<label class="input-label">Insert other number here</label>
+						</div>
+						<div class="action">
+							<input type="submit" value="Send" class="action-button">
+						</div>
+					</form>
+					<div class="result-form">
+						<p>Media: <div id="answer_media"></div> Product: <div id="answer_product"></div></p>
+					</div>
+				</div>
 
-            <div class="container card">
-                <div class="header-card">
-                    <!-- <img src="assets/images/lista.png" alt="list icon"> -->
-                    <h1>Average Pondered Calculator (REMAKE EDITION)</h1>
-                    <p>Please provide the following information:</p>          
-                </div>
-                <div class="body-form">
-                    <form action="formAveragePondered2">
-                        <input type="text" id="nbr_3_4" name="number4" placeholder="Insert the score obtained on the first exam">
-                        <input type="text" id="nbr_3_5" name="number5" placeholder="Insert the score obtained on the second exam">
-                
-                        <input type="text" id="nbr_3_3" name="number3" placeholder="Insert the student's ID">
-                
-                        <input type="text" id="nbr_3_1" name="number1" placeholder="Insert the weight of the first exam">
-                        <input type="text" id="nbr_3_2" name="number2" placeholder="Insert the weight of the second exam">
-                        <input type="submit" value="Send" class="button_type">
-                    </form>
-                </div>
-                <div class="result-form">
-                    <p>The student with ID <div id="answer_pondered_name2"></div> has an average pondered score of <div id="answer_pondered2"></div></p>
-                </div>
-            </div>
+				<div class="card">
+					<div class="card-image">
+						<img src="assets/images/icon-student.png" width="150px" alt="">
+						<div class="card-info">
+							<h1>Average Pondered Calculator (STANDARD)</h1>
+							<p>Insert the necessary numbers to calculate and print the weighted average of a student:</p>
+						</div>
+					</div>
+					<form action="formAveragePondered" class="card-form">
+						<div class="input">
+							<input type="text" id="nbr_2_4" class="input-field" name="number4" required />
+							<label class="input-label">Insert the first score</label>
+						</div>
+						<div class="input">
+							<input type="text" id="nbr_2_5" class="input-field" name="number5" required />
+							<label class="input-label">Insert the second score</label>
+						</div>
 
-            <div class="container card">
-                <div class="header-card">
-                    <!-- <img src="assets/images/lista.png" alt="list icon"> -->
-                    <h1>Average Pondered Calculator (REMAKE EDITION 2)</h1>
-                    <p>Please provide the following information:</p>          
-                </div>
-                <div class="body-form">
-                    <form action="formAveragePondered3">
-                        <input type="text" id="nbr_4_student1" name="id1" placeholder="Insert the number of the first student's ID">
-                        <input type="text" id="nbr_4_first1" name="number1" placeholder="Insert the score obtained for the student on the first exam">
-                        <input type="text" id="nbr_4_second1" name="number2" placeholder="Insert the score obtained for the student on the second exam">
+						<div class="input">
+							<input type="text" id="nbr_2_3" class="input-field" name="number3" required />
+							<label class="input-label">Insert the student's ID</label>
+						</div>
 
-                        <input type="text" id="nbr_4_student2" name="id2" placeholder="Insert the number of the first student's ID">
-                        <input type="text" id="nbr_4_first2" name="number3" placeholder="Insert the score obtained for the student on the first exam">
-                        <input type="text" id="nbr_4_second2" name="number4" placeholder="Insert the score obtained for the student on the second exam">
-                
-                        <input type="text" id="nbr_4_1" name="number1" placeholder="Insert the weight of the first exam">
-                        <input type="text" id="nbr_4_2" name="number2" placeholder="Insert the weight of the second exam">
-                        <input type="submit" value="Send" class="button_type">
-                    </form>
-                </div>
-                <div class="result-form">
-                    <p>The first student with ID <div id="answer_pondered_id_student1"></div> has an average pondered score of <div id="answer_pondered_student1"></div></p> <br>
-                    <p>The second student with ID <div id="answer_pondered_id_student2"></div> has an average pondered score of <div id="answer_pondered_student2"></div></p>
-                </div>
-            </div> 
-               
-        </div>
-    </section>
+						<div class="input">
+							<input type="text" id="nbr_2_1" class="input-field" name="number3" required />
+							<label class="input-label">Insert the weight of the first exam</label>
+						</div>
+						<div class="input">
+							<input type="text" id="nbr_2_2" class="input-field" name="number2" required />
+							<label class="input-label">Insert the weight of the second exam</label>
+						</div>
+						<div class="action">
+							<input type="submit" value="Send" class="action-button">
+						</div>
+					</form>
+					<div class="result-form">
+						<p>The student with ID <div id="answer_pondered_name"></div> has an average pondered score of <div id="answer_pondered"></div></p>
+					</div>
+				</div>
 
-    <footer>
-        © 2023 Copyright:
-    <a class="text-footer" target="_blank" href="https://github.com/mewmewdevart/StartTech2023">Larissa Cristina
-          Benedito</a>
-    </footer>
+				<div class="card">
+					<div class="card-image">
+						<img src="assets/images/icon-student2.png" width="150px" alt="">
+						<div class="card-info">
+							<h1>Average Pondered Calculator(REMAKE EDITION) </h1>
+							<p>Insert the necessary numbers to calculate and print the weighted average of a student. <br> (The difference exists behind the code) </p>
+							<!-- <p> Insert the required numbers to calculate and print the weighted average of two students:</p> -->
+						</div>
+					</div>
+					<form action="formAveragePondered2" class="card-form">
+						<div class="input">
+							<input type="text" id="nbr_3_4" class="input-field" name="number4" required />
+							<label class="input-label">Insert the first score</label>
+						</div>
+						<div class="input">
+							<input type="text" id="nbr_3_5" class="input-field" name="number5" required />
+							<label class="input-label">Insert the second score</label>
+						</div>
 
-    <script src="assets/js/script.js"></script>
+						<div class="input">
+							<input type="text" id="nbr_3_3" class="input-field" name="number3" required />
+							<label class="input-label">Insert the student's ID</label>
+						</div>
+
+						<div class="input">
+							<input type="text" id="nbr_3_1" class="input-field" name="number3" required />
+							<label class="input-label">Insert the weight of the first exam</label>
+						</div>
+						<div class="input">
+							<input type="text" id="nbr_3_2" class="input-field" name="number2" required />
+							<label class="input-label">Insert the weight of the second exam</label>
+						</div>
+						<div class="action">
+							<input type="submit" value="Send" class="action-button">
+						</div>
+					</form>
+					<div class="result-form">
+						<p>The student with ID <div id="answer_pondered_name2"></div> has an average pondered score of <div id="answer_pondered2"></div></p>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-image">
+						<img src="assets/images/icon-students.png" width="150px" alt="">
+						<div class="card-info">
+							<h1>Average Pondered Calculator(REMAKE EDITION 2) </h1>
+							<p> Insert the required numbers to calculate and print the weighted average of two students: </p>
+						</div>
+					</div>
+					<form action="formAveragePondered3" class="card-form">
+						<div class="input">
+							<input type="text" id="nbr_4_student1" class="input-field" name="number3" required />
+							<label class="input-label">Insert the 1º student's ID</label>
+						</div>
+						<div class="input">
+							<input type="text" id="nbr_4_first1" class="input-field" name="number4" required />
+							<label class="input-label">Insert his first score</label>
+						</div>
+						<div class="input">
+							<input type="text" id="nbr_4_second1" class="input-field" name="number5" required />
+							<label class="input-label">Insert his second score</label>
+						</div>
+
+						<div class="input">
+							<input type="text" id="nbr_4_student2" class="input-field" name="number3" required />
+							<label class="input-label">Insert the 2º student's ID</label>
+						</div>
+						<div class="input">
+							<input type="text" id="nbr_4_first2" class="input-field" name="number4" required />
+							<label class="input-label">Insert her first score</label>
+						</div>
+						<div class="input">
+							<input type="text" id="nbr_4_second2" class="input-field" name="number5" required />
+							<label class="input-label">Insert her second score</label>
+						</div>
+
+						<div class="input">
+							<input type="text" id="nbr_4_1" class="input-field" name="number3" required />
+							<label class="input-label">Insert the weight of the first exam</label>
+						</div>
+						<div class="input">
+							<input type="text" id="nbr_4_2" class="input-field" name="number2" required />
+							<label class="input-label">Insert the weight of the second exam</label>
+						</div>
+						<div class="action">
+							<input type="submit" value="Send" class="action-button">
+						</div>
+					</form>
+					<div class="result-form">
+						<p>The first student with ID  <div id="answer_pondered_id_student1"></div> has an average pondered score of <div id="answer_pondered_student1"></div></p>
+						<p>The second student with ID  <div id="answer_pondered_id_student2"></div> has an average pondered score of <div id="answer_pondered_student2"></div></p>
+					</div>
+				</div>
+		</div>
+	</div>
+	</section>
+	
+	<footer>
+		© 2023 Copyright:
+	<a class="text-footer" target="_blank" href="https://github.com/mewmewdevart/StartTech2023">Larissa Cristina
+		  Benedito</a>
+	</footer>
+
+	<script src="assets/js/script.js"></script>
 </body>
 </html>
