@@ -175,6 +175,31 @@
 						<p>The second student with ID  <div id="answer_pondered_id_student2"></div> has an average pondered score of <div id="answer_pondered_student2"></div></p>
 					</div>
 				</div>
+
+				<div class="card">
+					<div class="card-image">
+						<img src="assets/images/icon_money.png" width="150px" alt="">
+						<div class="card-info">
+							<h1>Salary Discounts</h1>
+							<p> Insert your salary to see the discounts related to INSS, Health insurance, and FGTS: </p>
+						</div>
+					</div>
+					<form action="formSalaryDiscounts" class="card-form">
+						<div class="input">
+							<input type="text" id="nbr_5" class="input-field" name="number3" required />
+							<label class="input-label">Insert your salary</label>
+						</div>
+
+						<div class="action">
+							<input type="submit" value="Send" class="action-button">
+						</div>
+					</form>
+					<div class="result-form">
+						<p> Discounts : $<div id="answer_Discounts"></div></p>
+						<hr>
+						<p> Total : $<div id="answer_salaryrDiscounts"></div></p>
+					</div>
+				</div>
 		</div>
 	</div>
 	</section>

@@ -126,14 +126,47 @@ formAverageP3.addEventListener('submit', function(e) {
     div4.innerHTML = averagePondered2;
 });
 
+//Salary Discounts : Need to be fixed
+let formSalary = document.querySelector('form[action="formSalaryDiscounts"]');
+
+formSalary.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    function calc_inss(salary){
+        return (salary * 0.1);
+    }
+
+    function calc_fgts(salary){
+        return (salary * 0.08);
+    }
+
+    function calc_health(salary){
+        return (salary - 100);
+    }
+
+    let salary = parseFloat(document.getElementById('nbr_5').value.trim());
+
+    let inssDiscount = calc_inss(salary);
+    let fgtsDiscount = calc_fgts(salary);
+    let healthDiscount = calc_health(salary);
+
+    let salaryDiscounts = salary - inssDiscount - fgtsDiscount - healthDiscount;
+
+    let salaryAfterDiscounts = salary + salaryDiscounts;
+
+    let div2 = document.getElementById("answer_Discounts");
+    div2.innerHTML = salaryDiscounts.toFixed(2);
+    let div = document.getElementById("answer_salaryrDiscounts");
+    div.innerHTML = salaryAfterDiscounts.toFixed(2);
+});
+
 /* 
 5 - Implemente, utilizando funções, um programa que receba do usuário o valor do salário bruto de um funcionário e imprima o valor com descontos de INSS, FGTS e Plano de Saúde. O programa deve utilizar uma função para calcular cada um dos descontos, sendo que estas funções devem receber o valor do salário bruto e retornar o valor a ser descontado. Os valores descontados devem ser:
 
 INSS: 10% do valor bruto;
 FGTS: 8%;
 Plano de Saúde: R$100,00.
-*/
-/* 
+
 let salario = float(prompt("Digite o salario bruto: "));
 
 calcula_desconto_inss = return (0.1 * valor_bruto)
