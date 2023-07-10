@@ -15,6 +15,11 @@ falso = false; // false;
 
 // ~~~~~~ O jeito ideal de declarar variaveis no JavaScript é usando let e const ~~~~~~ 
 // Hoisting em JavaScript: Declarações são elevadas.
+// Declarações de variáveis e funções são movidas para o topo do escopo em que estão,
+// antes mesmo da execução do código.
+//      No caso das variáveis, o hoisting faz com que elas sejam declaradas 
+//  (e, opcionalmente, inicializadas) antes da execução do código.
+
 //      "Nunca mais eu vou usar var... é muito ruim!"  
 var test; // Declaração é "elevada" para o topo do escopo
 console.log(test); // Resultado: Não da errro mas retorna undefined
