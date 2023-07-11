@@ -170,11 +170,74 @@ formSalary.addEventListener('submit', function(e) {
 
 
 
+// Average Calculator 
+let formAverage = document.querySelector('form[action="formAverage"]');
 
-/* 
-Ex07:
-	salários até R$ 280,00 (incluindo) : aumento de 20%
+formAverage.addEventListener('submit', function(e) {
+	e.preventDefault();
 
-	aumento = salario_atual * 0.2
-	novo_salario = salario_atual + aumento
-*/
+	function calc_media(number1, number2) {
+		return ((number1+number2)/2);
+	}
+
+	let id = document.getElementById('nbr_6_0').value.trim();
+	let number1 = parseFloat(document.getElementById('nbr_6_1').value.trim());
+	let number2 = parseFloat(document.getElementById('nbr_6_2').value.trim());
+
+	if (number1 >= 0 && number1 <= 10 && number2 >= 0 && number2 <= 10) {
+        let media = calc_media(number1, number2);
+
+        let feedback;
+
+		if (media == 10) {
+			feedback = "Approved with Distinction";
+		} else if (media >= 7) {
+			feedback = "Approved";
+		} else {
+			feedback = "Failed";
+		}
+
+        let div0 = document.getElementById("answer_ID");
+        div0.innerHTML = id;
+        let div1 = document.getElementById("answer_media");
+        div1.innerHTML = media;
+        let div2 = document.getElementById("answer_feedback");
+        div2.innerHTML = feedback;
+    } else {
+        alert("Please enter valid grades between 0 and 10.");
+    }
+});
+
+// Tabajara Organizations
+// Salary increase for your employees, please enter your salary to make the salary adjustments.
+let formTabajara = document.querySelector('form[action="formTabajaraOrg"]');
+
+formTabajara.addEventListener('submit', function(e) {
+	e.preventDefault();
+
+	let salary = parseFloat(document.getElementById('nbr_7_0').value.trim());
+	let salaryIncrease = 0;
+	let result = 0;
+
+	if (salary >= 0)
+	{
+		if (salary > 1500)
+		salaryIncrease = salary * 0.05;
+	else if (salary > 700)
+		salaryIncrease = salary * 0.1;
+	else if (salary > 280)
+		salaryIncrease = salary * 0.15;
+	else
+		salaryIncrease = salary * 0.2;
+
+	result = salaryIncrease + salary;
+
+	let div0 = document.getElementById("answer_currentSalary");
+	div0.innerHTML = salary.toFixed(2);
+	let div1 = document.getElementById("answer_salaryResult");
+	div1.innerHTML = result.toFixed(2);
+
+	} else {
+        alert("Please insert one valid value.");
+    }
+});

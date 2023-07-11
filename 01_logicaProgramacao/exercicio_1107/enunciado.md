@@ -43,6 +43,18 @@ o salário antes do reajuste;
 o percentual de aumento aplicado;
 o valor do aumento;
 o novo salário, após o aumento.
+//
+Verificar em qual faixa salarial o salário do colaborador se enquadra.
+Com base na faixa salarial, calcular o valor do aumento usando a seguinte fórmula:
+    Faixa salarial até R$ 280,00: aumento = salário * 0.2 (20%)
+    Faixa salarial entre R$ 280,00 e R$ 700,00: aumento = salário * 0.15 (15%)
+    Faixa salarial entre R$ 700,00 e R$ 1500,00: aumento = salário * 0.1 (10%)
+    Faixa salarial acima de R$ 1500,00: aumento = salário * 0.05 (5%)
+
+    Calcular o novo salário após o aumento somando o valor do aumento ao salário atual:
+    novo_salario = salário + aumento
+
+Com base nessas fórmulas, você poderá calcular o salário antes do reajuste, o percentual de aumento aplicado, o valor do aumento e o novo salário após o aumento.
 
 8 - Faça um programa para o cálculo de uma folha de pagamento, sabendo que os descontos são do Imposto de Renda, que depende do salário bruto (conforme tabela abaixo), e que o FGTS corresponde a 11% do Salário Bruto, mas não é descontado (é a empresa que deposita). O Salário Líquido corresponde ao Salário Bruto menos os descontos. O programa deverá pedir ao usuário o valor da sua hora e a quantidade de horas trabalhadas no mês. Desconto do IR:
 
@@ -60,5 +72,25 @@ Salário Bruto: (5 * 220)        : R$ 1100,00
 FGTS (11%)                      : R$  121,00
 Total de descontos              : R$  165,00
 Salário Liquido                 : R$  935,00
+
+//
+A fórmula matemática para calcular o salário líquido de acordo com as informações fornecidas seria a seguinte:
+
+Calcular o salário bruto:
+salario_bruto = valor_hora * quantidade_horas
+
+Calcular o desconto do Imposto de Renda (IR):
+Se salario_bruto <= 900, então desconto_ir = 0
+Se salario_bruto > 900 e salario_bruto <= 1500, então desconto_ir = salario_bruto * 0.05
+Se salario_bruto > 1500 e salario_bruto <= 2500, então desconto_ir = salario_bruto * 0.1
+Se salario_bruto > 2500, então desconto_ir = salario_bruto * 0.2
+
+Calcular o valor do FGTS (Fundo de Garantia do Tempo de Serviço):
+fgts = salario_bruto * 0.11
+
+Calcular o salário líquido:
+salario_liquido = salario_bruto - desconto_ir
+
+Essa fórmula leva em consideração os descontos do Imposto de Renda e o valor do FGTS, resultando no salário líquido após os descontos.
 
 EXTRA (+200XP): A entrada de dados deve ser feita através do HTML e não de prompt.

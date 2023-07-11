@@ -203,6 +203,58 @@
 						<p>Liquid Salary: $<span id="answer_salary"></span></p>						
 					</div>
 				</div>
+
+				<div class="card">
+					<div class="card-image">
+						<img src="assets/images/icon-students2.png" width="150px" alt="">
+						<div class="card-info">
+							<h1>Average Calculator</h1>
+							<p>To calculate the student's average and determine if they are approved, please provide two numbers.</p>
+						</div>
+					</div>
+					<form action="formAverage" class="card-form">
+						<div class="input">
+							<input type="text" id="nbr_6_0" class="input-field" name="number1" required />
+							<label class="input-label">Insert the student ID</label>
+						</div>
+						<div class="input">
+							<input type="text" id="nbr_6_1" class="input-field" name="number1" required />
+							<label class="input-label">Insert one number here</label>
+						</div>
+						<div class="input">
+							<input type="text" id="nbr_6_2" class="input-field" name="number1" required />
+							<label class="input-label">Insert other number here</label>
+						</div>
+						<div class="action">
+							<input type="submit" value="Send" class="action-button">
+						</div>
+					</form>
+					<div class="result-form">
+						<p>Student: <div id="answer_ID"></div> Got an average of: <div id="answer_media"></div>, which means he/she is: <div id="answer_feedback"></div></p>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-image">
+						<img src="assets/images/icon_salary.png" width="150px" alt="">
+						<div class="card-info">
+							<h1>Salary Tabajara</h1>
+							<p>Salary increase for your employees. Please insert your salary to make the salary adjustments:</p>
+						</div>
+					</div>
+					<form action="formTabajaraOrg" class="card-form">
+						<div class="input">
+							<input type="text" id="nbr_7_0" class="input-field" name="number1" required />
+							<label class="input-label">Insert your salary</label>
+						</div>
+						<div class="action">
+							<input type="submit" value="Send" class="action-button">
+						</div>
+					</form>
+					<div class="result-form">
+						<p>Current salary: <div id="answer_currentSalary"></div> <br> Salary after increase: <div id="answer_salaryResult"></div></p>
+					</div>
+				</div>
 		</div>
 	</div>
 	</section>
