@@ -168,27 +168,11 @@ formSalary.addEventListener('submit', function(e) {
 	calcDiscount(grossSalary);
 });
 
+
+
+
 /* 
-5 - Implemente, utilizando funções, um programa que receba do usuário o valor do salário bruto de um funcionário e imprima o valor com descontos de INSS, FGTS e Plano de Saúde. O programa deve utilizar uma função para calcular cada um dos descontos, sendo que estas funções devem receber o valor do salário bruto e retornar o valor a ser descontado. Os valores descontados devem ser:
-
-INSS: 10% do valor bruto;
-FGTS: 8%;
-Plano de Saúde: R$100,00.
-
-let salario = float(prompt("Digite o salario bruto: "));
-
-calcula_desconto_inss = return (0.1 * valor_bruto)
-calcula_desconto_fgts = return (0.08 * valor_bruto)
-calcula_desconto_plano_saude = return (100.0 - valor_bruto);
-
-Exiba:
-	desconto_inss
-	desconto_fgts
-	desconto_plano _de _saude;
-	total_descontar = salario_bruto - desconto_inss - desconto_fgts - desconto_plano_de_saude;
-
-
-Ex06:
+Ex07:
 	salários até R$ 280,00 (incluindo) : aumento de 20%
 
 	aumento = salario_atual * 0.2
