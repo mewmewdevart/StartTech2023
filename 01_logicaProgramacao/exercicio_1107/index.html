@@ -186,7 +186,7 @@
 					</div>
 					<form action="formSalaryDiscounts" class="card-form">
 						<div class="input">
-							<input type="text" id="nbr_5" class="input-field" name="number3" required />
+							<input type="text" id="nbr_5_0" class="input-field" name="number3" required />
 							<label class="input-label">Insert your salary</label>
 						</div>
 
@@ -195,9 +195,12 @@
 						</div>
 					</form>
 					<div class="result-form">
-						<p> Discounts : $<div id="answer_Discounts"></div></p>
+						<p>Salary before discounts: $<span id="answer_gross"></span></p>
+						<p>INSS Discount: $<span id="answer_inss"></span></p>
+						<p>FGTS Discount: $<span id="answer_fgts"></span></p>
+						<p>Health Discount: $<span id="answer_health"></span></p>
 						<hr>
-						<p> Total : $<div id="answer_salaryrDiscounts"></div></p>
+						<p>Liquid Salary: $<span id="answer_salary"></span></p>						
 					</div>
 				</div>
 		</div>
