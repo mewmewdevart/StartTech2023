@@ -127,6 +127,7 @@ formAverageP3.addEventListener('submit', function(e) {
 });
 
 //Salary Discounts : Need to be fixed
+// !ATENTION: I just followed the rules insert in the exercise question (ORIGINAL RULES OF WORK NOT APLICABE).
 let formSalary = document.querySelector('form[action="formSalaryDiscounts"]');
 
 formSalary.addEventListener('submit', function(e) {
