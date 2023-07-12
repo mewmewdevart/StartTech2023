@@ -28,7 +28,7 @@ else
 
 //			&& AND : Ambos precisam ser positivo	
 //				Quando eu negar uma preposição que possua &&, o resultado será igual a :
-//					NOT (PREPOSICAO1 || NOT PREPOSICAO2) =NOT (PREPOSICAO1 && NOT PREPOSICAO2)
+//					NOT (PREPOSICAO1 || NOT PREPOSICAO2) = NOT (PREPOSICAO1 && NOT PREPOSICAO2)
 //			|| OR : Um tem que ser verdadeiro para ser considerado verdadeiro
 //			! Não da primeira ou Não na segunda
 
