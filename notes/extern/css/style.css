@@ -3,7 +3,7 @@
 
 :root {
     --orangeColor: #F9A826;
-
+    --orangeColorSoft: #ffdda7;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 }
 
 .image-logo {
-    width: 450px;
+    width: 375px;
 }
 
 .title-page {
@@ -33,4 +33,17 @@ body {
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn {
     background-color: var(--orangeColor) !important;
+}
+
+.title-section {
+    margin-top: 10px;
+    padding-left: 5px;
+    font-size:16px;
+    background-color: var(--orangeColorSoft);
+    border-radius: 2px;
+}
+
+.card {
+    padding-top: 15px;
+    margin-left: 15px;
 }
