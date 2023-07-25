@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url(css-reset.css);
+
+/* Hide Input Number Arrows : Forms*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+:root {
+  /* Color Variables */
+  --dark-10: #293145;
+  --dark-20: #6E7275;
+  --dark-30: #DBDBDB;
+  --white-10: #FFFFFF;
+  --purple-10: #4C60AA;
+  --purple-30: #e0e7ff;
+  --purple-50: #f2e6ff;
+  --linear: linear-gradient(90deg, #4C60AA 0%, #4C60AA 100%);
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  height: 275px;
+  padding-top: 20px;
+  background: var(--linear);
+  text-align: center;
+  color: var(--white-10);
+}
+
+header img {
+  width: 175px;
+}
+
+header h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section {
+  background-color: var(--purple-30);
+  min-height: 100vh;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--purple-10);
+}
+
+footer a {
+  text-align: center;
+  color: var(--white-10);
+  text-decoration: none;
+}
+
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.container-fluid .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+input {
+  appearance: none;
+  border-radius: 0;
+}
+
+.card {
+  margin: 0.6rem 0.3rem;
+  flex: 0 0 calc(25% - 1rem);
+  max-width: calc(25% - 2rem);
+  background-color: var(--white-10);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+  padding: 0.75rem;
+}
+
+.card-image {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-form {
+  text-align: left;
+  padding: 2rem 1rem 0;
+}
+
+.card-form .action {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-form .action label {
+  margin-bottom: 5px;
+}
+
+.card-form .action .input-field {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card-form .action .action-button {
+  width: 100%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  padding-top: 1.5rem;
+  & + .input {
+    margin-top: 10px;
+  }
+}
+
+.input-label {
+  color: var(--purple-10);
+  position: absolute;
+  top: 1.5rem;
+  transition: 0.25s ease;
+}
+
+.input-field {
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  padding: 0.25rem 0;
+  &:focus,
+  &:valid {
+    outline: 0;
+    border-bottom-color: var(--purple-10);
+    & + .input-label {
+      color: var(--purple-10);
+      transform: translateY(-1.5rem);
+    }
+  }
+}
+
+.action {
+  margin-top: 2rem;
+}
+
+.action-button {
+  font: inherit;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  background-color: var(--purple-10);
+  border-radius: 6px;
+  color: var(--white-10);
+  border: 0;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.action-button:hover {
+  padding: 15px;
+  background-color: #89a0f6;
+}
+
+.card-info {
+  padding: 1% 1%;
+  text-align: center;
+  font-size: 16px;
+  color: #8597a3;
+}
+
+.card-info h1 {
+  color: var(--dark-10);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.result-form {
+  background-color: var(--purple-30);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
