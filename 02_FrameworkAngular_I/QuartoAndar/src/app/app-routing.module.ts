@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-// Importando as rotas(routes) da aplicação
 import { HomeComponent } from './home/home.component';
-import { AboutUSComponent } from './about-us/about-us.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'}, // Rota padrão da aplicação, é a raiz do projeto
+  {path: '', redirectTo: 'home', pathMatch: 'full'}, // Criando um objeto para cada routing da aplicação: Neste obj é a raiz do projeto
   {path: 'home', component: HomeComponent},
-  {path: 'about-us', component: AboutUSComponent},
+  {path: 'about-us', component: AboutUsComponent},
   {path: 'contact', component: ContactComponent},
 ];
 

@@ -1,0 +1,46 @@
+/* =================== FONTS =================== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    // === FONTS-STYLE
+    --font-style-primary: 'Lato', sans-serif;
+    --font-style-secondary: 'Open Sans', sans-serif;
+    --font-small: 12px;
+    --font-smaller: 16px;
+    --font-big: 24px;
+    --font-extraBig: 23px;
+
+    // === COLORS-STYLE
+    --color-primary: #85D4FF;
+    --color-secondary: #EBA0FC;
+
+    --color-white: white;
+  }  
+
+.menu-spacer {
+    flex: 1 1 auto;
+}
+  
+mat-toolbar {
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    color: #D295FD;
+    
+    .myIcon {
+        width: 25px;
+        height: 25px;
+        padding-right: 10px;
+    }
+
+    h1 {
+        font-family: var(--font-style-primary);
+    }
+
+    button {
+        &:hover {
+            background-color: #D295FD;
+            color: var(--color-white);
+        }
+    }
+}
