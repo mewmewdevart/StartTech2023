@@ -1,0 +1,105 @@
+//@import url(../app.component.scss); Endereço absoluto - externo
+@import "../header/header.component.scss";
+
+.container {
+    display: block;
+    width: 80%;
+    margin: auto;
+
+    section {
+        h1 {
+            font-family: $font-style-primary;
+            font-size: $font-extraBig;
+            margin-left: 10px;
+        }
+        h2 {
+            font-family: $font-style-primary;
+            font-size: $font-extraBig;
+            margin-left: 10px;
+        }
+        mat-grid-tile {
+            background-color: $color-white;
+            mat-card {
+                margin: 10px;
+                background-color: $color-white;
+                box-shadow: $card-shadow_soft;
+                transition: $card-transition;
+                &:hover {
+                    box-shadow: $card-shadow-hover;
+                }
+                img {
+                    width: 100%;
+                }
+
+                mat-card-content {
+                    h2 {
+                        font-family: $font-style-primary;
+                        font-size: $font-big;
+                        padding-top: 15px;
+                        font-weight: bold;
+                    }
+                    ul {
+                        padding-top: 0px;
+                        padding-left: 0px;
+                        padding-bottom: 20px;
+                        list-style: none;
+                        li {
+                            font-family: $font-style-secondary;
+                        }
+                    }
+                }
+
+                mat-card-actions {
+                    .button_styled {
+                        align-items: center;
+                        background-color: #fff;
+                        border: 2px solid #000;
+                        box-sizing: border-box;
+                        color: #000;
+                        cursor: pointer;
+                        display: inline-flex;
+                        fill: #000;
+                        font-family: Inter,sans-serif;
+                        font-size: 16px;
+                        font-weight: 600;
+                        height: 48px;
+                        justify-content: center;
+                        letter-spacing: -.8px;
+                        line-height: 24px;
+                        min-width: 140px;
+                        outline: 0;
+                        padding: 0 17px;
+                        text-align: center;
+                        text-decoration: none;
+                        transition: all .3s;
+                        user-select: none;
+                        -webkit-user-select: none;
+                        touch-action: manipulation;
+                    }
+                    
+                    .button_styled:focus {
+                        color: $color-black;
+                    }
+                    
+                    .button_styled:hover {
+                        border-color: $color-secondary;
+                        color: $color-black;
+                        fill: $color-secondary;
+                    }
+                    
+                    .button_styled:active {
+                        border-color: $color-secondary;
+                        color: $color-black;
+                        fill: $color-secondary;
+                    }
+                }
+            }
+        }
+    }
+}
+  
+  @media (min-width: 768px) {
+    .button_styled {
+      min-width: 170px;
+    }
+  }

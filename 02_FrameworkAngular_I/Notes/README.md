@@ -34,3 +34,6 @@ ng generate component nome_page
 #### Material UI: https://material.angular.io/
 
 $ ng add @angular/material
+
+
+// Separar componente por componente antes de iniciar o projeto, pesque os ts necessarios
