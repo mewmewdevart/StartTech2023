@@ -21,6 +21,7 @@ O programa Start &lt;Tech> é uma iniciativa da Universidade TOTVS, em parceria 
 - [00_htmlBasic](00_htmlBasic/) | Notas criadas durante o primeiro modulo : Frontend Estático
 - [00_OrkutPage](https://mewmewdevart.github.io/StartTech2023/project00_OrkutPage/index.html) | Site desenvolvido para o Módulo 01 : Frontend Estático
 - [01_logicaProgramacao](01_logicaProgramacao/) | Notas criadas durante o segundo modulo : Logica de Programação com JavaScript
+- [01_projectHangCarrotGame](01_projectHangCarrotGame/) | Jogo desenvolvido para o Módulo 02 : Logica de Programação com JavaScript
 
 
 ## Instruções
