@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Game">
+	<meta name="keywords" content="hangman, game">
+	<meta name="author" content="Larissa Cristina Benedito">
+
+	<link rel="icon" type="image/x-icon" href="assets/rscs/media/iconRabbit.ico">
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<title>HangCarrot Game</title>
+</head>
+
+<body>
+	<div class="logo">
+		<img src="assets/rscs/media/carrotLogo.png" alt="">
+	</div>
+
+	<div class="hangmanContainer">
+		<div id="hangmanGame">
+			<div class="ui-characters">
+				<img src="assets/rscs/media/bar1.png" class="ui-char-img" data-life="0" alt="">
+				<img src="assets/rscs/media/bar2.png" class="ui-char-img" data-life="1" alt="">
+				<img src="assets/rscs/media/bar3.png" class="ui-char-img" data-life="2" alt="">
+				<img src="assets/rscs/media/bar4.png" class="ui-char-img" data-life="3" alt="">
+				<img src="assets/rscs/media/bar5.png" class="ui-char-img" data-life="4" alt="">
+				<img src="assets/rscs/media/bar6.png" class="ui-char-img" data-life="5" alt="">
+			</div>
+			<div class="characters">
+				<img src="assets/rscs/media/idle_carrotGIF.gif" class="carrot-img-1" alt="">
+				<img src="assets/rscs/media/idle_rabbitGIF.gif" class="enemy-img-1" alt="">
+			</div>
+			<div class="ui-face">
+				<img src="assets/rscs/media/ui_1.png" class="img-1" alt="">
+				<img src="assets/rscs/media/ui_2.png" class="img-2" alt="">
+			</div>
+			<div id="word-display"></div>
+		</div>
+	</div>
+
+	<!--
+		<div id="words-used"></div>
+		<div id="remaining-attempts"></div>  -->
+	<div class="container-keys">
+		<div id="message"></div>
+		<button class="key-a key-button" onclick="ft_handleButtonClick('A')">A</button>
+		<button class="key-b key-button" onclick="ft_handleButtonClick('B')">B</button>
+		<button class="key-c key-button" onclick="ft_handleButtonClick('C')">C</button>
+		<button class="key-d key-button" onclick="ft_handleButtonClick('D')">D</button>
+		<button class="key-e key-button" onclick="ft_handleButtonClick('E')">E</button>
+		<button class="key-f key-button" onclick="ft_handleButtonClick('F')">F</button>
+		<button class="key-g key-button" onclick="ft_handleButtonClick('G')">G</button>
+		<button class="key-h key-button" onclick="ft_handleButtonClick('H')">H</button>
+		<button class="key-i key-button" onclick="ft_handleButtonClick('I')">I</button>
+		<button class="key-j key-button" onclick="ft_handleButtonClick('J')">J</button>
+		<button class="key-k key-button" onclick="ft_handleButtonClick('K')">K</button>
+		<button class="key-l key-button" onclick="ft_handleButtonClick('L')">L</button>
+		<button class="key-m key-button" onclick="ft_handleButtonClick('M')">M</button>
+		<button class="key-n key-button" onclick="ft_handleButtonClick('N')">N</button>
+		<button class="key-o key-button" onclick="ft_handleButtonClick('O')">O</button>
+		<button class="key-p key-button" onclick="ft_handleButtonClick('P')">P</button>
+		<button class="key-q key-button" onclick="ft_handleButtonClick('Q')">Q</button>
+		<button class="key-r key-button" onclick="ft_handleButtonClick('R')">R</button>
+		<button class="key-s key-button" onclick="ft_handleButtonClick('S')">S</button>
+		<button class="key-t key-button" onclick="ft_handleButtonClick('T')">T</button>
+		<button class="key-u key-button" onclick="ft_handleButtonClick('U')">U</button>
+		<button class="key-v key-button" onclick="ft_handleButtonClick('V')">V</button>
+		<button class="key-w key-button" onclick="ft_handleButtonClick('W')">W</button>
+		<button class="key-x key-button" onclick="ft_handleButtonClick('X')">X</button>
+		<button class="key-y key-button" onclick="ft_handleButtonClick('Y')">Y</button>
+		<button class="key-z key-button" onclick="ft_handleButtonClick('Z')">Z</button>
+	</div>
+	<!-- 
+	<div class="container">
+		<form action="#" class="form-infos">
+			<input type="text" id="fname" value="John"><br><br>
+		</form> 
+	</div> -->
+
+	<!-- Game Sounds-->
+    <audio src="assets/souds/hurt.mp3" preload="auto" id="somHurt"></audio>
+	<audio src="assets/souds/happy.mp3" preload="auto" id="somHappy"></audio>
+
+	<script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>
