@@ -4,17 +4,19 @@
 .container {
     display: block;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
 
-    section {
+    #imoveis-favoritos, #lista-imoveis {
+        min-height: 60vh;
         h1 {
             font-family: $font-style-primary;
-            font-size: $font-extraBig;
+            font-size: $font-smaller;
             margin-left: 10px;
         }
         h2 {
             font-family: $font-style-primary;
-            font-size: $font-extraBig;
+            font-size: $font-smaller;
+            font-weight: bold;
             margin-left: 10px;
         }
         mat-grid-tile {
@@ -28,11 +30,12 @@
                     box-shadow: $card-shadow-hover;
                 }
                 img {
-                    width: 100%;
+                    width: 325px;
+                    height: 250px;
                 }
 
                 mat-card-content {
-                    h2 {
+                    h3 {
                         font-family: $font-style-primary;
                         font-size: $font-big;
                         padding-top: 15px;
@@ -51,14 +54,15 @@
 
                 mat-card-actions {
                     .button_styled {
+                        margin: 0 auto;
                         align-items: center;
-                        background-color: #fff;
-                        border: 2px solid #000;
+                        background-color: $color-white;
+                        border: 2px solid $color-black;
                         box-sizing: border-box;
-                        color: #000;
+                        color: $color-black;
                         cursor: pointer;
                         display: inline-flex;
-                        fill: #000;
+                        fill: $color-black;
                         font-family: Inter,sans-serif;
                         font-size: 16px;
                         font-weight: 600;
@@ -66,7 +70,7 @@
                         justify-content: center;
                         letter-spacing: -.8px;
                         line-height: 24px;
-                        min-width: 140px;
+                        min-width: 240px;
                         outline: 0;
                         padding: 0 17px;
                         text-align: center;

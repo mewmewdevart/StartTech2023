@@ -1,22 +1,47 @@
 <div class="container">
-    <section id="startPage">
-        <h1>Olá, {{nome}}</h1>
-        <h2>Confira aqui a sua lista de imoveis:</h2>
-        
+    <h1>Olá, {{nome + " " + sobrenome}}</h1>
+    <section id="imoveis-favoritos">
+        <h2>Confira os seus imoveis favoritos: </h2>
+        <mat-grid-list cols="3" rowHeight="3:5">
+            <div  *ngFor="let imovel of imoveis">
+                <mat-grid-tile *ngIf="imovel.quartos >= 2">
+                    <mat-card>
+                        <img mat-card-image src="{{imovel.foto}}" alt="Photo of my house">
+                        <mat-card-content>
+                        <h3>{{imovel.titulo}}</h3>
+                            <ul>
+                                <li>Quartos: {{imovel.quartos}}</li>
+                                <li>Banheiros: {{imovel.banheiros}}</li>
+                                <li>Metragem: {{imovel.area}}m²</li>
+                                <li>Preço: R${{imovel.preco}}</li>
+                            </ul>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-button (click)="verDetalhes(imovel.id)" class="button_styled">Mais detalhes</button>
+                        </mat-card-actions>
+                    </mat-card>                  
+                </mat-grid-tile>
+            </div>
+        </mat-grid-list>  
+    
+    </section>
+    <section id="lista-imoveis">
+        <h2>Imoveis disponiveis:</h2>
         <mat-grid-list cols="3" rowHeight="3:5"> <!-- width:height-->
-            <mat-grid-tile *ngFor="let imovel of imoveis">
+            <mat-grid-tile *ngFor="let imovel of imoveis"> <!-- ngFor - faça uma repitação de imovel dentro do meu array imoveis : se colocar dentro do html, voce cria varias vzs aquele componente-->
                 <mat-card>
-                    <img mat-card-image src="../../assets/imageHouse_1.png" alt="Photo of my house">
+                    <img mat-card-image src="{{imovel.foto}}" alt="Photo of my house">
                     <mat-card-content>
-                        <h2>{{imovel}}</h2>
+                        <h3>{{imovel.titulo}}</h3>
                         <ul>
-                            <li>Quartos: 04</li>
-                            <li>Banheiros: 03</li>
-                            <li>Metragem: 10m²</li>
+                            <li>Quartos: {{imovel.quartos}}</li>
+                            <li>Banheiros: {{imovel.banheiros}}</li>
+                            <li>Metragem: {{imovel.area}}m²</li>
+                            <li>Preço: R${{imovel.preco}}</li>
                         </ul>
                     </mat-card-content>
                     <mat-card-actions>
-                        <button mat-button class="button_styled">Mais detalhes</button>
+                        <button mat-button (click)="verDetalhes(imovel.id)" class="button_styled">Mais detalhes</button>
                     </mat-card-actions>
                 </mat-card>                  
             </mat-grid-tile>
