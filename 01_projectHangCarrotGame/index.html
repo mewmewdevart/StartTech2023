@@ -8,7 +8,10 @@
 	<meta name="keywords" content="hangman, game">
 	<meta name="author" content="Larissa Cristina Benedito">
 
-	<link rel="icon" type="image/x-icon" href="assets/rscs/media/iconRabbit.ico">
+    <!-- Adicionando o favicon -->
+    <link rel="shortcut icon" href="assets/rscs/media/iconRabbit.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="assets/rscs/media/iconRabbit.ico">
+
 	<link rel="stylesheet" href="assets/css/main.css">
 
 	<title>HangCarrot Game</title>
@@ -37,7 +40,16 @@
 				<img src="assets/rscs/media/ui_1.png" class="img-1" alt="">
 				<img src="assets/rscs/media/ui_2.png" class="img-2" alt="">
 			</div>
+			<!-- 
+			<button id="btn-power"><img src="assets/rscs/media/btn_Power.gif" alt=""></button>
+			<div id="container-power">
+				<form action="">
+					<input type="text" id="fname" name="fname"><br>
+				</form>
+			</div> -->
+
 			<div id="word-display"></div>
+			<div id="category"></div>
 		</div>
 	</div>
 
@@ -73,6 +85,7 @@
 		<button class="key-y key-button" onclick="ft_handleButtonClick('Y')">Y</button>
 		<button class="key-z key-button" onclick="ft_handleButtonClick('Z')">Z</button>
 	</div>
+
 	<!-- 
 	<div class="container">
 		<form action="#" class="form-infos">
@@ -84,6 +97,7 @@
     <audio src="assets/souds/hurt.mp3" preload="auto" id="somHurt"></audio>
 	<audio src="assets/souds/happy.mp3" preload="auto" id="somHappy"></audio>
 
+	<audio src="assets/souds/is_it_a_jojo_reference.mp3" preload="auto" id="somIntro"></audio>
 	<script type="module" src="assets/js/main.js"></script>
 </body>
 

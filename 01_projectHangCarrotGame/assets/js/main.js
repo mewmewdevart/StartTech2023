@@ -1,16 +1,23 @@
 let carrotHurt = document.getElementById("somHurt");
 let carrotHappy = document.getElementById("somHappy");
 
-carrotHurt.volume = 0.1;
-carrotHappy.volume = 0.1;
+let musicGame = document.getElementById("somIntro");
+
+carrotHurt.volume = 0.2;
+carrotHappy.volume = 0.2;
+musicGame.volume = 0.1;
+
+musicGame.play();
 
 // Import the data.js file
-import { horrorMovies, trashMovies } from './data.js';
+import { horror_Movies, trash_Movies, top_Grossing_Movies} from './data.js';
 
 // Function to remove accents(ç) from a word
 function ft_removeAccents(word) {
 	return word.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
+// Turn the variable to store(horrorMovies, trashMovies and top_Grossing) global
+let randomMovieType;
 
 // Function to generate a random word
 function ft_generateRandomWord(arrayWords) {
@@ -20,11 +27,14 @@ function ft_generateRandomWord(arrayWords) {
 
 // Function to generate a random movie from the list
 function ft_getRandomMovieFromList(movieList) {
-	let randomMovieType;
-	if (Math.random() < 0.5)
-		randomMovieType = 'horrorMovies';
+	const randomNumber = Math.random();
+
+	if (randomNumber < 0.33)
+		randomMovieType = 'horror_Movies';
+	else if (randomNumber < 0.66)
+		randomMovieType = 'top_Grossing_Movies';
 	else
-		randomMovieType = 'trashMovies';
+		randomMovieType = 'trash_Movies';
 	return ft_generateRandomWord(movieList[randomMovieType]);
 }
 
@@ -65,6 +75,16 @@ function ft_handleButtonClick(input) {
 
 	const carrotImg1 = document.querySelector('.carrot-img-1');
 	const enemyImg1 = document.querySelector('.enemy-img-1');
+
+
+	if (totalLifes <= 3) {
+		const img1 = document.querySelector('.img-1');
+		const img2 = document.querySelector('.img-2');
+	
+		img1.style.display = 'none';
+		img2.style.display = 'block';
+	  }
+
 	// If the input is a single letter
 	if (inputWord.length === 1) {
 		if (wordsUsed.toLowerCase().includes(inputWord.toLowerCase())) {
@@ -133,6 +153,10 @@ function displayMessage(message) {
 function ft_updateDisplay() {
 	const wordDisplay = document.getElementById("word-display");
 	wordDisplay.textContent = wordShow.join(" ");
+
+	// Display the movie category
+	const categoryElement = document.getElementById("category");
+	categoryElement.textContent = `Category: ${randomMovieType}`;
 }
 
 // Function to display the lifes on the screen
@@ -150,7 +174,7 @@ function ft_showLifes(totalLifes) {
 }
 
 // Main logic
-const randomWord = ft_getRandomMovieFromList({ horrorMovies, trashMovies });
+const randomWord = ft_getRandomMovieFromList({ horror_Movies, trash_Movies, top_Grossing_Movies });
 
 let wordsUsed = "";
 let totalLifes = 6;

@@ -31,8 +31,8 @@ body {
 
 .logo {
 	position: absolute;
-	padding-bottom: 500px;
-	z-index: 1;
+	top: 5%;
+	z-index: 2;
 }
 
 .hangmanContainer {
@@ -85,18 +85,66 @@ body {
 	font-weight: bold;
 	color: white;
 	max-width: 500px;
+	z-index: 2;
 }
 
+/* 
+.hangmanContainer #btn-power {
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.hangmanContainer #btn-power:hover {
+	transform: scale(0.8);
+} */
+
+.hangmanContainer #category {
+	margin-left: 200px;
+	text-align: center;
+	width: 250px;
+	background-color: var(--var-green);
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 5px;
+	color: var(--var-black);
+}
+/* 
+#container-power {
+	position: absolute;
+	margin-top: 50px;
+	opacity: 0.9;
+	background-color: var(--var-purple);
+	width: 650px;
+	height: 125px;
+	border-radius: 5px;
+	z-index: 1 !important;
+	border: 3px solid var(--var-cream);
+	display: flex;
+	justify-content: center;
+}
+
+#container-power form {
+	margin-top: 75px;
+}
+#container-power form input{
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+} */
+
 .hangmanContainer .ui-face .img-1 {
-	margin-top: 350px;
+	margin-top: 352px;
 	margin-left: 35px;
 	position: absolute;
 	z-index: 1;
 }
 
 .hangmanContainer .ui-face .img-2 {
-	display: none !important;
-	margin-top: 350px;
+	display: none;
+	margin-top: 352px;
 	margin-left: 35px;
 	position: absolute;
 	z-index: 1;
