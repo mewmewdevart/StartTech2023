@@ -14,6 +14,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { DetailsComponent } from './details/details.component';
+import { RodapeComponent } from './rodape/rodape.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DetailsComponent } from './details/details.component';
     ContactComponent,
     AboutUsComponent,
     HeaderComponent,
-    DetailsComponent
+    DetailsComponent,
+    RodapeComponent
   ],
   imports: [
     BrowserModule,

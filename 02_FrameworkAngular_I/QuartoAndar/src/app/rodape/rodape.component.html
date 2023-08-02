@@ -1,0 +1,16 @@
+<footer class="footer-fluid">
+    <div class="footer-container">
+        <div class="left">
+            <p>{{title}} | {{copyright}} por {{developer}}</p>
+        </div>
+        <div class="right">
+            <ul>
+                <li *ngFor="let icon of redesSociais">
+                    <a href="{{icon.link}}" target="_blank">
+                        <img src="{{icon.icone}}" alt="{{icon.nome}}">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>

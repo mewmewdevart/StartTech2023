@@ -19,7 +19,7 @@
           "options": {
             "outputPath": "dist/quarto-andar",
             "index": "src/index.html",
-            "main": "src/main.ts",
+            "main": "src/main.ts",           
             "polyfills": [
               "zone.js"
             ],
