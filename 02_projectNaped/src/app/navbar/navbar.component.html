@@ -1,0 +1,21 @@
+<mat-toolbar>
+		<mat-toolbar-row>
+			<span class="logo">Naped</span>
+			<span class="example-spacer"></span>
+
+			<ul>
+				<li class="main-page-item">Home</li>
+				<li class="main-page-item">Séries</li>
+				<li class="main-page-item">Filmes</li>
+				<li class="main-page-item">Animes</li>
+				<li class="main-page-item">Games</li>
+			</ul>
+
+			<button mat-button class="account-button" [matMenuTriggerFor]="menu">Minha conta</button>
+			<mat-menu #menu="matMenu">
+				<button mat-menu-item>Perfil</button>
+				<button mat-menu-item>Configurações</button>
+				<button mat-menu-item>Sair</button>
+			</mat-menu>
+		</mat-toolbar-row>
+</mat-toolbar>
