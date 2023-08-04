@@ -12,10 +12,12 @@ footer {
   margin: auto;
   align-items: center;
   justify-content: space-between;
+  font-weight: 500;
+  padding: 5px;
 }
 
 .left {
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 ul {
@@ -24,11 +26,9 @@ ul {
     li {
      font-size: $font-big;
      display: inline-block;
-     margin-left: 5px;
-
-     img {
-      filter: invert(100%);
-     }
+     margin-left: 8px;
+      img {
+        filter: invert(100%);
+      }
     }
   }
-  
