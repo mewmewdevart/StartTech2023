@@ -1,0 +1,21 @@
+<div class="po-wrapper">
+    <po-page-default p-title="Lista de Tarefas">
+
+        <div class="po-row">
+            <po-input class="po-md-6" name="input" p-label="Digite a sua tarefa: " [(ngModel)]="newTask"></po-input>
+            <po-button class="po-md-3" p-label="Adicionar" (p-click)="addTask()"></po-button>
+        </div>
+
+        <po-list-view p-property-title="Minhas tarefas" [p-items]="tasks">
+            <ng-template p-list-view-content-template let-task>
+
+                <div class="po-row">
+                    <po-info class="po-md-6" p-label="Tarefa" [p-value]="task"></po-info>
+                    <po-button class="po-md-3" p-label="Remover" (p-click)="removeTask(task.index)"></po-button>
+                </div>
+    
+            </ng-template>
+        </po-list-view>
+
+    </po-page-default>
+</div>
