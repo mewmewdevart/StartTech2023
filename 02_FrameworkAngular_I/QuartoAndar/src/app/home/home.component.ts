@@ -23,6 +23,10 @@ export class HomeComponent {
     this.router.navigate(['/details', imovelID]);
   }
 
+  toggleFavorito(index: number): void {
+    this.imoveis[index].favorito = !this.imoveis[index].favorito;
+  }
+
   nome: string = "Larissa";
   sobrenome: string = "Cristina";
   imoveis: Array<any> = [ //Array<any> ou Array<object>
