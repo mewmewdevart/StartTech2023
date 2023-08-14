@@ -1,0 +1,40 @@
+@import "../app.component.scss";
+
+footer {
+    width: 100%;
+    height: 80px;
+    margin-top: 80px;
+    background-color: $cor-secundaria;
+    color: $branco;
+    .container {
+        width: 1140px;
+        display: flex;
+        margin: auto;
+        .copyright {
+            width: 75%;
+            font-size: $media;
+            font-family: $fonte-secundaria;
+            p {
+                padding-top: 30px;
+            }
+        }
+        .social-links {
+            width: 25%;
+            ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                flex-direction: row-reverse;
+                li {
+                    list-style-type: none;
+                    padding-top: 20px;
+                    padding-right: 16px;
+                    img {
+                        filter: invert(100%);
+                    }
+                }
+            }
+
+        }
+    }
+}
