@@ -1,0 +1,3 @@
+[submodule "windows98"]
+	path = 02_projectWindows98
+	url = https://github.com/mewmewdevart/windows98
