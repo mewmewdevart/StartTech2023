@@ -1,0 +1,28 @@
+@import "../app.component.scss";
+
+mat-toolbar {
+    position: fixed;
+    background-color: $cor-principal;
+    color: $branco;
+    z-index: 99;
+    .container {
+        width: 1140px;
+        display: flex;
+        margin: auto;
+        h1 {
+            font-family: $fonte-principal;
+            font-size: $grande;
+            color: $branco;
+            padding-top: 15px; 
+        }
+        .menu-spacer {
+            flex: 1 1 auto;
+        }
+        button {
+            margin-top: 10px;
+            &:hover {
+                color: $cor-secundaria;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import "../app.component.scss";
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    min-height: calc(100vh - 160px);
+    h1 {
+        font-family: $fonte-principal;
+        font-size: $grande;
+    }
+    form {
+        mat-form-field {
+            text-align: center;
+            display: block;
+        }
+        button{
+            display: block;
+            background-color: $cor-principal;
+            cursor: pointer;
+            font-size: $media;
+            width: 100%;
+            padding: 25px;
+            border: none;
+            color: white;
+            &:hover {
+                padding: 27px;
+            }
+        }
+    }
+}

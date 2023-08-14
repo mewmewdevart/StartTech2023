@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>Detalhes do Produto: </h2>
+    <section class="product-details">
+        <img [src]="imovel.foto" alt="Foto de  {{imovel.titulo}}" />
+        <div class="product-description">
+            <h3>{{imovel.titulo}}</h3>
+            <p>{{imovel.descricao1}}</p>
+            <p>{{imovel.descricao2}}</p>
+            <ul>
+                <li>Quartos: {{ imovel.quartos }}</li>
+                <li>Banheiros: {{ imovel.banheiros }}</li>
+                <li>Metragem: {{ imovel.area }} m²</li>
+                <li>Preço: {{ imovel.preco | currency }}</li>
+            </ul>
+            <button href="#">Agendar uma visita</button>
+        </div>
+    </section>
+    <app-favoritos></app-favoritos>
+</div>
+
