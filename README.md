@@ -22,6 +22,9 @@ O programa Start &lt;Tech> é uma iniciativa da Universidade TOTVS, em parceria 
 - [00_OrkutPage](https://mewmewdevart.github.io/StartTech2023/00_projectOrkutPage/index.html) | Site desenvolvido para o Módulo 01 : Frontend Estático
 - [01_logicaProgramacao](01_logicaProgramacao/) | Notas criadas durante o segundo modulo : Logica de Programação com JavaScript
 - [01_projectHangCarrotGame](https://mewmewdevart.github.io/StartTech2023/01_projectHangCarrotGame/index.html) | Jogo desenvolvido para o Módulo 02 : Logica de Programação com JavaScript
+- [02_FrameworkAngular_I/](02_FrameworkAngular_I/) | Notas criadas durante o Módulo Framewor Angular I
+- [02_projectWindows98](https://github.com/mewmewdevart/windows98) | Site com design inspirado no Windows 98, desenvolvido para o Módulo Framewor Angular I
+- [03_FrameworkAngular_II/](03_FrameworkAngular_II) | Notas criadas durante o Módulo Framewor Angular II
 
 
 ## Instruções
