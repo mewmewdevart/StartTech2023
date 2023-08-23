@@ -1,0 +1,9 @@
+@import '@angular/material/theming';
+
+
+@include mat-core();
+$roosevelt-primary: mat-palette($mat-blue-grey);
+$roosevelt-accent:  mat-palette($mat-pink, 500, 900, A100);
+$roosevelt-warn:    mat-palette($mat-deep-orange);
+$roosevelt-theme: mat-light-theme($roosevelt-primary, $roosevelt-accent, $roosevelt-warn);
+@include angular-material-theme($roosevelt-theme);

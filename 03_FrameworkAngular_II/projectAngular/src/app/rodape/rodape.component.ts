@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./rodape.component.scss']
 })
 export class RodapeComponent {
-    title: string = 'Lar Feliz Imóveis';
+    title: string = 'UniRent';
     copyright: string = 'Desenvolvido em 2023';
     developer: string = 'Start Tech TOTVS';
 

@@ -1,0 +1,16 @@
+<footer>
+    <div class="container">
+        <div class="copyright">
+            <p>{{ title }} | {{ copyright }} por {{ developer }}.</p>
+        </div>
+        <div class="social-links">
+            <ul>
+                <li *ngFor="let item of redesSociais">
+                    <a [href]="item.link" target="_blank">
+                        <img src="{{ item.icone }}" alt="{{ item.nome }}" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>

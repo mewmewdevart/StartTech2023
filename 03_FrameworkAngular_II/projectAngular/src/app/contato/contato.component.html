@@ -1,29 +1,31 @@
-<div class="container formulario">
+<div class="container">
     <h1>Fale Conosco</h1>
-    <form action="#">
+    <form (ngSubmit)="submitForm()">
         <mat-form-field>
             <mat-label>Digite seu nome:</mat-label>
-            <input matInput  placeholder="Fulano da Silva" [formControl]="nome" required/>
-            <mat-error *ngIf="nome.invalid">{{getErrorMessage}}</mat-error>
+            <input matInput placeholder="Fulano da Silva" [formControl]="nome" required />
+            <mat-error *ngIf="nome.invalid">{{ getErrorMessage() }}</mat-error>
         </mat-form-field>
         <mat-form-field>
-            <mat-label>Digite o seu email:</mat-label>
-            <input matInput  placeholder="Email" [formControl]="email" required/>
-            <mat-error *ngIf="email.invalid">{{getErrorMessage}}</mat-error>
+            <mat-label>Digite seu e-mail:</mat-label>
+            <input matInput placeholder="email@email.com" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
             <mat-label>Selecione um assunto</mat-label>
             <mat-select [formControl]="assunto">
-                <mat-option value="vendas">Tenho interesse em um imovel</mat-option>
-                <mat-option value="vendas">Quero fazer uma reclamação</mat-option>
-                <mat-option value="vendas">Quero trabalhar com vocês</mat-option>
+                <mat-option value="vendas">Tenho interesse em um imóvel</mat-option>
+                <mat-option value="suporte">Quero fazer uma reclamação</mat-option>
+                <mat-option value="rh">Quero trabalhar na Lar Feliz</mat-option>
             </mat-select>
         </mat-form-field>
-        <!-- 
         <mat-form-field>
-            <mat-label>Digite a sua mensagem</mat-label>
-            <textarea matInput[formControl]="mensagem"></textarea>
-        </mat-form-field>  -->
-        <button mat-button type="submit">Enviar</button>
+            <mat-label>Digite sua mensagem</mat-label>
+            <textarea matInput [formControl]="mensagem"></textarea>
+            <mat-error *ngIf="mensagem.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <button mat-button [disabled]="(nome.invalid || email.invalid || mensagem.invalid ? 'true' : '')" type="submit">
+            Enviar
+        </button>
     </form>
 </div>

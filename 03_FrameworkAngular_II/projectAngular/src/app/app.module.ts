@@ -27,6 +27,8 @@ import { FavoritosComponent } from './favoritos/favoritos.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { CommonModule } from '@angular/common';
+import { SessionTimerComponent } from './session-timer/session-timer.component';
+import { LoginComponent } from './login/login.component';
 
 registerLocaleData(ptBr);
 
@@ -37,7 +39,9 @@ registerLocaleData(ptBr);
     CabecalhoComponent,
     DetalhesComponent,
     RodapeComponent,
-    FavoritosComponent
+    FavoritosComponent,
+    SessionTimerComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

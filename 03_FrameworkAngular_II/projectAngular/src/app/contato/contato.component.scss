@@ -1,31 +1,66 @@
 @import "../app.component.scss";
 
-.formulario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    min-height: calc(100vh - 160px);
+.container {
+    width: 60%;
+    min-height: calc(100vh - 250px);
+    display: block;
+    margin: auto;
+    padding-top: 79px;
+
     h1 {
         font-family: $fonte-principal;
         font-size: $grande;
+        line-height: $extra-grande;
+        padding-top: 20px;
+        color: $cor-principal;
     }
+
     form {
         mat-form-field {
-            text-align: center;
             display: block;
+            font-family: $fonte-secundaria;
+            font-size: $media;
         }
-        button{
+
+        button {
             display: block;
             background-color: $cor-principal;
-            cursor: pointer;
+            color: $branco;
             font-size: $media;
-            width: 100%;
-            padding: 25px;
+            line-height: $grande;
             border: none;
-            color: white;
+            border-radius: 4px;
+            width: 100%;
+            height: 48px;
+            cursor: pointer;
+
             &:hover {
-                padding: 27px;
+                background-color: #672d8b;
+            }
+
+            &:disabled {
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 60px;
+
+        h1 {
+            font-size: $media;
+            line-height: $grande;
+            padding-top: 10px;
+        }
+
+        form {
+            mat-form-field {
+                font-size: $pequena;
+            }
+
+            button {
+                font-size: $pequena;
+                line-height: $media;
             }
         }
     }

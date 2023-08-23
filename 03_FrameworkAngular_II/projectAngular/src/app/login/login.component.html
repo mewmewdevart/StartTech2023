@@ -1,0 +1,10 @@
+<div *ngIf="!loggedIn">
+    <h2>Login</h2>
+    <input ngModel name="username" placeholder="Nome de usuário">
+    <input ngModel name="password" placeholder="Senha de usuário" type="password">
+    <button (click)="login()">Login</button>
+</div>
+<div *ngIf="loggedIn">
+    <h2>Bem-vindo {{username}}</h2>
+    <button (click)="logout()">Logout</button>
+</div>

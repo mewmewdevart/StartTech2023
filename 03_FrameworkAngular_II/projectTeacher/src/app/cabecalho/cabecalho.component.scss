@@ -1,0 +1,39 @@
+@import "../app.component.scss";
+
+mat-toolbar {
+  position: fixed;
+    background-color: $cor-principal;
+    color: $branco;
+    z-index: 99;
+    .container {
+      width: 1140px;
+      display: flex;
+      margin: auto;
+      h1{
+        font-family: $fonte-principal;
+        font-size: $grande;
+        color: $branco;
+        padding-top: 15px;
+      }
+      .menu-spacer {
+        flex: 1 1 auto;
+      }
+      button {
+        margin-top: 10px;
+        &:hover {
+          color: $cor-secundaria;
+        }
+      }
+      .auth {
+        background-color: $cor-secundaria;
+        color: $branco;
+        margin-left: 30px;
+        top: 4px;
+        padding: 10px 20px;
+        &:hover {
+          color: $branco;
+          opacity: 0.8;
+        }
+      }
+    }
+  }

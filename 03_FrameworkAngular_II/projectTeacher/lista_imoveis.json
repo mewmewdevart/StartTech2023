@@ -1,0 +1,91 @@
+{
+  "imoveis": [
+    {
+      "id": 1,
+      "titulo": "Casa do Unicórnio",
+      "foto": "https://htmlcolorcodes.com/assets/images/colors/pastel-purple-color-solid-background-1920x1080.png",
+      "quartos": 4,
+      "banheiros": 3,
+      "area": 360,
+      "preco": 990000,
+      "favorito": false,
+      "descricao1": "Making bread on the bathrobe purr like an angel but x. Loves cheeseburgers to pet a cat, rub its belly, endure blood and agony, quietly weep, keep rubbing belly stinky cat or sleep on dog bed, force dog to sleep on floor or kitty pounce, trip, faceplant you didn't see that no you didn't definitely didn't lick, lick, lick, and preen away the embarrassment, so your pillow is now my pet bed yet sleep.",
+      "descricao2": "Catasstrophe why use post when this sofa is here licks your face lick sellotape leave dead animals as gifts annoy owner until he gives you food say meow repeatedly until belly rubs, feels good."
+    },
+    {
+      "id": 2,
+      "titulo": "Apartamento Encantado",
+      "foto": "https://htmlcolorcodes.com/assets/images/colors/pastel-purple-color-solid-background-1920x1080.png",
+      "quartos": 2,
+      "banheiros": 1,
+      "area": 45,
+      "preco": 120000,
+      "favorito": false,
+      "descricao1": "Whiskers to play, with tail in the air meow all night having their mate disturbing sleeping humans i am the best. Lick the curtain just to be annoying stick butt in face yet thug cat but ears back wide eyed or sleep on dog bed, force dog to sleep on floor.",
+      "descricao2": "Leave dead animals as gifts meow all night while happily ignoring when being called plop down in the middle where everybody walks so chase imaginary bugs, yet rub against owner because nose is wet purr for no reason."
+    },
+    {
+      "id": 3,
+      "titulo": "Casa do Arco-Íris",
+      "foto": "https://htmlcolorcodes.com/assets/images/colors/pastel-purple-color-solid-background-1920x1080.png",
+      "quartos": 7,
+      "banheiros": 5,
+      "area": 800,
+      "preco": 1500000,
+      "favorito": true,
+      "descricao1": "Rainbows and sunshine, this house is like a dream. A paradise of colors and space, where each room is a canvas waiting for your imagination to run wild. Let your creativity soar in this magical abode where happiness knows no bounds.",
+      "descricao2": "Gaze upon the colors, bask in the warmth of the sunlit rooms. Embrace the harmony of nature and architecture as you explore the nooks and crannies of this enchanting haven."
+    },
+    {
+      "id": 4,
+      "titulo": "Flat Encantado",
+      "foto": "https://htmlcolorcodes.com/assets/images/colors/pastel-purple-color-solid-background-1920x1080.png",
+      "quartos": 1,
+      "banheiros": 1,
+      "area": 36,
+      "preco": 180000,
+      "favorito": false,
+      "descricao1": "A cozy nook of tranquility, this flat offers a peaceful escape from the bustling world. Nestled in its compact space, it's a haven of comfort, perfect for those seeking a minimalist retreat. Let the soft hues and gentle ambiance soothe your senses.",
+      "descricao2": "Unwind in the embrace of simplicity, where every corner speaks of serenity. Close your eyes, and let the enchantment of this compact wonder transport you to a realm of relaxation."
+    },
+    {
+      "id": 5,
+      "titulo": "Sala Mágica",
+      "foto": "https://htmlcolorcodes.com/assets/images/colors/pastel-purple-color-solid-background-1920x1080.png",
+      "quartos": 0,
+      "banheiros": 1,
+      "area": 25,
+      "preco": 250000,
+      "favorito": false,
+      "descricao1": "Step into a world of wonder as you enter this magical room. The absence of walls opens up endless possibilities, where your creativity can roam free. A canvas waiting for your artistic touch, a haven for dreamers and creators.",
+      "descricao2": "Dance in the gentle streams of light, let your ideas take flight in this room of boundless inspiration. Whether it's a personal sanctuary or a shared space for collaboration, the magic within knows no limits."
+    },
+    {
+      "id": 6,
+      "titulo": "Cobertura Celestial",
+      "foto": "https://htmlcolorcodes.com/assets/images/colors/pastel-purple-color-solid-background-1920x1080.png",
+      "quartos": 3,
+      "banheiros": 3,
+      "area": 200,
+      "preco": 1500000,
+      "favorito": false,
+      "descricao1": "Elevate your living experience to new heights in this celestial penthouse. With sweeping vistas that stretch to the horizon, every glance is a reminder of the vast world awaiting your exploration. Bask in luxury and comfort amidst the clouds.",
+      "descricao2": "Every moment in this celestial haven is an invitation to savor life's finest pleasures. From the elegant design to the breathtaking panoramas, every detail whispers of opulence and grandeur."
+    }
+  ],
+  "contato": {
+    "nome": "aaaaaa",
+    "email": "bbb@teste.com",
+    "assunto": "suporte",
+    "mensagem": "blgm~çnb gnbgmnbprmrt"
+  },
+  "usuarios": [
+    {
+      "name": "Usuário teste",
+      "username": "teste123",
+      "password": "111",
+      "confirmPassword": "111",
+      "id": 1
+    }
+  ]
+}

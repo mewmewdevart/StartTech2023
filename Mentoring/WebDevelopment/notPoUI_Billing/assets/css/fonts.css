@@ -1,0 +1,81 @@
+/* Importando Lato Black */
+@font-face {
+  font-family: 'Lato Black';
+  src: url('Lato/Lato-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Importando Lato Black Italic */
+@font-face {
+  font-family: 'Lato Black';
+  src: url('Lato/Lato-BlackItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Continue importando as outras fontes seguindo o mesmo padrão... */
+
+/* Importando Lato Bold */
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('Lato/Lato-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Importando Lato Bold Italic */
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('Lato/Lato-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Importando Lato Italic */
+@font-face {
+  font-family: 'Lato Italic';
+  src: url('Lato/Lato-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Importando Lato Light */
+@font-face {
+  font-family: 'Lato Light';
+  src: url('Lato/Lato-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Importando Lato Light Italic */
+@font-face {
+  font-family: 'Lato Light';
+  src: url('Lato/Lato-LightItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Importando Lato Regular */
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Importando Lato Thin */
+@font-face {
+  font-family: 'Lato Thin';
+  src: url('Lato/Lato-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Importando Lato Thin Italic */
+@font-face {
+  font-family: 'Lato Thin';
+  src: url('Lato/Lato-ThinItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}

@@ -1,0 +1,17 @@
+<mat-toolbar>
+    <div class="container">
+        <img src="../../assets/images/unicornio.png" width="100px" alt="">
+        <span class="menu-spacer"></span>
+        <button mat-button routerLink="/">Home</button>
+        <button mat-button routerLink="quem-somos">Quem Somos</button>
+        <button mat-button routerLink="contato">Contato</button>
+        <button class="auth" *ngIf="!loggedIn" mat-button routerLink="login">
+            <mat-icon aria-hidden="false" aria-label="Acessar o sistema" fontIcon="login"></mat-icon>
+            Acessar o sistema
+        </button>
+        <button class="auth" *ngIf="loggedIn" mat-button (click)="logout()">
+            <mat-icon aria-hidden="false" aria-label="Sair do sistema" fontIcon="logout"></mat-icon>
+            Sair do sistema
+        </button>
+    </div>    
+</mat-toolbar>

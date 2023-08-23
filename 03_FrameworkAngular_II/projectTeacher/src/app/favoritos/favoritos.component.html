@@ -1,0 +1,26 @@
+<div class="container">
+    <section id="imoveis-favoritos">
+        <h2>Confira aqui os seus imóveis favoritos:</h2>
+        <mat-grid-list cols="3" rowHeight="3:4">
+            <div *ngFor="let imovel of imoveis; let i = index">
+                <mat-grid-tile *ngIf="imovel.favorito">
+                    <mat-card>
+                        <img mat-card-image [src]="imovel.foto" [alt]="imovel.titulo" />
+                        <mat-card-content>
+                            <h3>{{ imovel.titulo }}</h3>
+                            <ul>
+                                <li>Quartos: {{ imovel.quartos }}</li>
+                                <li>Banheiros: {{ imovel.banheiros }}</li>
+                                <li>Metragem: {{ imovel.area }} m²</li>
+                                <li>Preço: {{ imovel.preco | currency }}</li>
+                            </ul>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-button (click)="verDetalhes(imovel.id)">Mais detalhes</button>
+                        </mat-card-actions>
+                    </mat-card>
+                </mat-grid-tile>
+            </div>
+        </mat-grid-list>
+    </section>
+    </div>
