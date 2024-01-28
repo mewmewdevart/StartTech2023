@@ -21,6 +21,7 @@
 
 body {
 	font-family: 'Lato', sans-serif;
+	font-size: var(--var-title-medium);
 }
 
 #navbar_left {
@@ -62,7 +63,6 @@ body {
 
 
 #navbar_left .navbar_left_list li span {
-	font-size: var(--var-title-medium);
 }
 
 #content-page {
@@ -85,11 +85,11 @@ body {
 #content-page .navbar-main-page .header-user {
     display: flex; 
     align-items: center;
-    width: 216px;
+    width: 25%;
     height: 48px;
     background-color: var(--var-colorWhite);
     border-radius: 50px;
-	margin: 20px 30px 12px 30px; /* top, right, down, left*/
+	margin: 20px 30px 12px 30px; 
 }
 
 #content-page .navbar-main-page .header-user img {
@@ -106,16 +106,13 @@ body {
 }
 
 #content-page .navbar-main-page .header-user .user-title {
-    font-size: 12px;
-    font-weight: 700;
-	line-height: 20px;
+    font-weight: 600;
+	font-size: var(--var-title-medium);
 }
 
 #content-page .navbar-main-page .header-user .user-subtitle {
-    font-size: 10px;
-    font-weight: 600;
+    font-weight: 500;
 	color: var(--var-colorDarkGray);
-	line-height: 18px;
 }
 
 #content-page .navbar-main-page .header-user .icon-down img{
@@ -161,16 +158,15 @@ body {
 }
 
 #content-page .header-content-main .title-content .title-main {
-	font-size: 32px;
 	font-style: normal;
 	font-weight: 900;
 	line-height: 40px;
+	font-size: var(--var-title-Primary);
 }
 
 #content-page .header-content-main .title-content .paragraph-main {
 	width: 450px;
 	margin-top: 9px;
-	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 22px;
@@ -214,7 +210,7 @@ body {
 }
 
 #content-page .content .container-left{
-	width: 489px;
+	width: 50%;
 	min-height: 80vh;
 	margin-left: 28px;
 	margin-top: 21px;
@@ -222,8 +218,8 @@ body {
 
 #content-page .content .most-acess {
     background-color: var(--var-colorGray);
-    width: 489px;
-    height: 352px;
+    width: 100%;
+    min-height: 352px;
     border-radius: 16px;
 }
 
@@ -232,7 +228,6 @@ body {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 10px;
-	font-size: 14px;
 	font-style: normal;
 	font-weight: 900;
 	line-height: 22px; /* 157.143% */
@@ -262,7 +257,6 @@ body {
 #content-page .content .most-acess .blocks .block-item p {
 	padding-top: 8px;
 	color: var(--var-colorBlue);
-	font-size: 14px;
 	font-style: normal;
 	font-weight: 900;
 	line-height: 22px;
@@ -284,37 +278,36 @@ body {
 	margin-top: 21px;
 	margin-left: 20px;
 	background-color: var(--var-colorGray);
-	width: 631px;
+	width: 50%;
 	min-height: 100vh;
 	margin-right: 28px;
 	border-radius: 16px;
+	padding: 27px;
 }
 
 #content-page .content .container-right .group-cards {
-	width: 500px;
-	margin: 27px 22px 27px 22px;
+	width: 100%;
 }
 
 #content-page .content .container-right .group-cards h4 {
 	padding-top: 47px;
 	padding-left: 48px;
 	color: var(--var-colorYellow);
-	font-size: 24px;
 	font-style: normal;
 	font-weight: 900;
 	line-height: 30px;
 	height: 69px;
+	font-size: var(--var-title-Primary) !important; 
 }
 
 #content-page .content .container-right .group-cards p {
 	padding-left: 48px;
 	padding-bottom: 47px;
 	color: var(--var-colorWhite);
-	font-size: 16px;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 24px;
-	height: 52px;
+	height: 52px; 
 }
 
 #content-page .content .container-right .group-cards button {
@@ -322,7 +315,6 @@ body {
 	border: 1px solid var(--var-colorWhite);
 	border-radius: 25px;
 	color: var(--var-colorWhite);
-	font-size: 14px;
 	font-weight: 900;
 
 	width: 290px;
@@ -371,8 +363,7 @@ body {
 /* Estilos para telas menores ou iguais a 768 pixels de largura */
 @media (max-width: 768px) {
 	#content-page {
-	min-height: 500px;
-	  background-color: yellow;
+		min-height: 500px;
 	}
   }
   
@@ -383,3 +374,61 @@ body {
 	}
   }
   
+.bottom-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: var(--var-colorWhite);
+    margin-left: calc(200px + 67px);
+    padding: 20px;
+	margin-top: 20px;
+}
+
+.responsive-card {
+    width: 100%;
+    max-width: 32.5%; 
+    box-sizing: border-box;
+    background-color: var(--var-colorGray);
+    border-radius: 10px; 
+    padding: 15px; 
+}
+
+.responsive-card img {
+    width: 100%;
+    max-height: 200px; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.responsive-card h4 {
+    margin-top: 15px;
+	color: var(--Primary-Blue-Default, #0897E9);
+	text-align: left;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 22px;
+}
+
+.responsive-card p {
+	color: var(--Shade-Grey-Black, #000);
+
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.responsive-card button {
+	display: inline-flex;
+	padding: 12px 24px;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
